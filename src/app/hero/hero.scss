@@ -1,0 +1,47 @@
+section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+
+        img {
+            height: 90vh;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            // justify-content: right;
+            position: absolute;
+            font-family: 'Quantico';
+            padding-bottom: 7%;
+            color: #b5e93b;
+            width: 700px;
+
+
+            .name {
+                font-size: 100px;
+                font-weight: bold;
+                margin: 0;
+            }
+
+            .title {
+                font-size: 48px;
+                font-weight: bold;
+                margin: 0;
+            }
+        }
+    }
+
+    .right_arrow {
+        width: 107px;
+        margin-right: 70px;
+        cursor: pointer;
+    }
+}
