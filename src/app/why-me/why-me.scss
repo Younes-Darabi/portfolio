@@ -1,21 +1,20 @@
 section {
     font-family: 'Quantico';
     display: flex;
-    justify-content: space-between;
-    height: 100%;
+    width: calc(100vw - 170px);
+    height: calc(100vh - 150px);
+    margin-top: 150px;
 
     .why_me {
         display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        padding-top: 30px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .whyme_div {
         display: flex;
         flex-direction: column;
         flex: 1;
-        color: white;
 
         .i_am {
             margin: 0;
@@ -30,6 +29,7 @@ section {
                 display: flex;
                 flex-direction: column;
                 transition: all 400ms ease-in-out;
+                gap: 10px;
                 img{
                     height: 40px;
                 }
@@ -46,6 +46,7 @@ section {
         display: flex;
         flex-direction: column;
         align-items: end;
+        margin-top: 50px;
 
         button {
             font-size: 14px;
@@ -62,7 +63,7 @@ section {
     .arrow {
         display: flex;
         align-items: end;
-        padding: 70px;
+        padding: 100px;
 
         img {
             width: 107px;

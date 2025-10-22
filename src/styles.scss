@@ -1,13 +1,17 @@
 body {
-  background-color: black;
+  // width: calc(100vw - 170px);
+  height: 100vh;
+  overflow-y: hidden;
+  background-color: #000000;
   margin: 0;
 
 }
 
 h2 {
-  color: transparent;
-  transform: rotate(270deg);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
   font-size: 54px;
+  color: transparent;
   -webkit-text-stroke: 1px #b5e93b;
 }
 
@@ -19,6 +23,8 @@ h3 {
 
 p {
   font-size: 18px;
+  color: white;
+  margin: 0;
 }
 
 @font-face {

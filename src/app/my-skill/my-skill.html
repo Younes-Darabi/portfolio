@@ -1,0 +1,21 @@
+<section>
+    <div class="title">
+        <h2>My Skill Set</h2>
+    </div>
+    <div class="div_skills">
+        <p>A short introduction of your skills. Highlight your experience of working on different projects using
+            different
+            front-end technologies and emphasise your openness to learning and adapting to new technologies.</p>
+        <div>
+            @for (item of skills; track $index) {
+            <div class="single_skill">
+                <img src="{{item.image}}" alt="">
+                <p>{{item.name}}</p>
+            </div>
+            }
+        </div>
+    </div>
+    <div class="arrow">
+        <img src="/assets/img/right--.svg" alt="right arrow">
+    </div>
+</section>
