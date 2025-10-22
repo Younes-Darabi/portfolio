@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: black;
+    margin: 0;
+
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto Mono';
+    font-style: bold;
+    font-weight: 700;
+    src: url('/assets/fonts/roboto-mono-v31-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Quantico';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/quantico-v19-latin-regular.woff2') format('woff2');
+}

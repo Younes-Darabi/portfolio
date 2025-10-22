@@ -1,0 +1,14 @@
+div {
+    display: flex;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        app-hero {
+            height: 100%;
+            color: white;
+        }
+    }
+}
