@@ -1,0 +1,72 @@
+section {
+    font-family: 'Quantico';
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+    .why_me {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .whyme_div {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        color: white;
+
+        .i_am {
+            margin: 0;
+            margin-top: 30px;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-evenly;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                transition: all 400ms ease-in-out;
+                img{
+                    height: 40px;
+                }
+                &:hover {
+                    color: #b5e93b;
+                    cursor: default;
+                }
+
+            }
+        }
+    }
+
+    .btn_div {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        button {
+            font-size: 14px;
+            background-color: #b5e93b;
+            width: 135px;
+            height: 43px;
+            border-radius: 30px;
+            border-style: none;
+            font-family: 'Quantico';
+            cursor: pointer;
+        }
+    }
+
+    .arrow {
+        display: flex;
+        align-items: end;
+        padding: 70px;
+
+        img {
+            width: 107px;
+            cursor: pointer;
+        }
+    }
+}

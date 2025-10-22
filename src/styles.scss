@@ -1,13 +1,30 @@
-body{
-    background-color: black;
-    margin: 0;
+body {
+  background-color: black;
+  margin: 0;
 
 }
 
+h2 {
+  color: transparent;
+  transform: rotate(270deg);
+  font-size: 54px;
+  -webkit-text-stroke: 1px #b5e93b;
+}
+
+h3 {
+  font-size: 48px;
+  color: #b5e93b;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+}
+
 @font-face {
-    font-display: swap;
-    font-family: 'Roboto Mono';
-    src: url('/assets/fonts/roboto-mono-v31-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Roboto Mono';
+  src: url('/assets/fonts/roboto-mono-v31-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
