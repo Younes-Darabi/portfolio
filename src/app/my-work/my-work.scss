@@ -1,0 +1,122 @@
+section {
+    font-family: 'Quantico';
+    display: flex;
+    // width: calc(300vw - 170px);
+    height: calc(100vh - 150px);
+    margin-top: 150px;
+
+    .why_me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div_for{
+        display: flex;
+        gap: 40px;
+    }
+
+    .div_project {
+        display: flex;
+        flex-direction: column;
+        width: 919px;
+        height: 560px;
+        background-color: #3E4926;
+        border-radius: 30px;
+        padding: 10px 40px;
+
+        .div_project_name {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            span {
+                font-size: 100px;
+                font-weight: bolder;
+                color: #b5e93b;
+                color: transparent;
+                -webkit-text-stroke: 1px #b5e93b;
+            }
+
+            p {
+                font-size: 54px;
+                font-weight: 400;
+                color: #b5e93b;
+            }
+        }
+
+        .circle {
+            display: flex;
+            gap: 20px;
+        }
+
+        .div_project_about {
+            display: flex;
+
+            .div_info {
+                margin: 0 40px;
+
+                p {
+                    margin-left: 33px;
+                }
+            }
+
+            .div_img_btn {
+                display: flex;
+                flex-direction: column;
+
+                .div_btn {
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding-top: 20px;
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+                        width: 106px;
+                        height: 43px;
+                        font-weight: 400;
+                        cursor: pointer;
+                        border-radius: 30px;
+                        text-decoration: none;
+                    }
+
+                    .btn_github {
+                        background-color: #3E4926;
+                        border: 1px solid #b5e93b;
+                        color: #b5e93b;
+                    }
+
+                    .btn_live {
+                        background-color: #b5e93b;
+                        color: #252525;
+                        border-style: none;
+                    }
+                }
+            }
+
+
+        }
+
+        .div_info2 {
+            margin: 0 40px;
+            p{
+                margin-left: 33px;
+            }
+        }
+
+    }
+
+    .arrow {
+        display: flex;
+        align-items: end;
+        padding: 100px;
+
+        img {
+            width: 107px;
+            cursor: pointer;
+        }
+    }
+}

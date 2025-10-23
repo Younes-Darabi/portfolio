@@ -1,0 +1,46 @@
+<section>
+    <div class="why_me">
+        <h2>My Work</h2>
+    </div>
+    <div class="div_for">
+        @for (project of projects; track $index) {
+        <div class="div_project">
+            <div class="div_project_name">
+                <span>{{project.id}}</span>
+                <p>Project {{project.name}}</p>
+            </div>
+            <div class="div_project_about">
+                <div class="div_info">
+                    <div class="circle">
+                        <img src="assets/img/icons/my-project/ellipse.svg">
+                        <h4>About the project</h4>
+                    </div>
+                    <p>{{project.about}}</p>
+                    <div class="circle">
+                        <img src="assets/img/icons/my-project/ellipse.svg">
+                        <h4>Technologies I have used</h4>
+                    </div>
+                    <p>{{project.technologies}}</p>
+                </div>
+                <div class="div_img_btn">
+                    <img src="{{project.image}}" alt="">
+                    <div class="div_btn">
+                        <a href="{{project.githubUrl}}" class="btn_github">GitHub</a>
+                        <a href="{{project.liveTestUrl}}" class="btn_live">Live Test</a>
+                    </div>
+                </div>
+            </div>
+            <div class="div_info2">
+                <div class="circle">
+                    <img src="assets/img/icons/my-project/ellipse.svg">
+                    <h4>My group-projects experience</h4>
+                </div>
+                <p>{{project.experience}}</p>
+            </div>
+        </div>
+        }
+    </div>
+    <div class="arrow">
+        <img src="/assets/img/right--.svg" alt="right arrow">
+    </div>
+</section>

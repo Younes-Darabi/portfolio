@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   // width: calc(100vw - 170px);
   height: 100vh;
@@ -19,6 +23,13 @@ h3 {
   font-size: 48px;
   color: #b5e93b;
   font-weight: bold;
+}
+
+h4 {
+  font-size: 24px;
+  color: white;
+  font-weight: 400;
+  margin: 10px 0;
 }
 
 p {
