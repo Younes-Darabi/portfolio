@@ -21,6 +21,18 @@ export class ReferencesPage {
       name: 'Noah Mueller',
       projectName: 'Project Sharkie',
       comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
+    }, {
+      name: 'Noah Mueller',
+      projectName: 'Project Sharkie',
+      comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
+    }, {
+      name: 'Noah Mueller',
+      projectName: 'Project Sharkie',
+      comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
+    }, {
+      name: 'Noah Mueller',
+      projectName: 'Project Sharkie',
+      comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
     }
   ]
 }

@@ -1,5 +1,4 @@
 div {
-
     display: flex;
 
     app-menu {
@@ -9,26 +8,9 @@ div {
 
     div {
         display: flex;
-        // flex-direction: column;
-        // height: 100%;
 
         app-social-media {
             position: fixed;
         }
-
-        app-hero {
-            // height: 100%;
-        }
-
-        app-why-me {
-            // width: 100vw;
-            // margin-top: 100px;
-        }
-
-        // app-my-skill{
-        //     height: 100%;
-        //     margin-bottom: 100px;
-
-        // }
     }
 }

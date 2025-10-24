@@ -11,9 +11,12 @@ section {
     .div_references {
         display: flex;
         flex-direction: column;
+        justify-content: end;
         margin-bottom: 70px;
         gap: 20px;
-
+        flex-wrap: wrap;
+        height: 90%;
+        width: 1150px;
 
         .div_frame {
             display: flex;
@@ -23,7 +26,6 @@ section {
             height: 182px;
             border-radius: 30px;
             border: 1px solid #d3ed97;
-
 
             p {
                 font-size: 18px;
@@ -53,7 +55,8 @@ section {
                 color: #d3ed97;
                 margin: 0;
             }
-            div{
+
+            div {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -65,8 +68,9 @@ section {
 
     .arrow {
         display: flex;
-        align-items: end;
+        align-items: center;
         padding: 70px;
+        height: 100%;
 
         img {
             width: 100px;

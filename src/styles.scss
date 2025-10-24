@@ -23,7 +23,7 @@ h2 {
   font-size: 54px;
   color: transparent;
   -webkit-text-stroke: 1px #b5e93b;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h3 {
@@ -56,8 +56,19 @@ p {
   src: url('/assets/fonts/roboto-mono-v31-latin-regular.woff2') format('woff2');
 }
 
+/* quantico-regular - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Quantico';
-  src: url('/assets/fonts/quantico-v19-latin-regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/quantico-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* quantico-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Quantico';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/quantico-v19-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }

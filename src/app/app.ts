@@ -6,10 +6,11 @@ import { HeroPage } from './pages/hero-page/hero-page';
 import { AboutPage } from './pages/about-page/about-page';
 import { SkillsPage } from "./pages/skills-page/skills-page";
 import { WorksPage } from "./pages/works-page/works-page";
+import { ContactPage } from "./pages/contact-page/contact-page";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Menu, SocialMedia, HeroPage, AboutPage, SkillsPage, WorksPage],
+  imports: [RouterOutlet, Menu, SocialMedia, HeroPage, AboutPage, SkillsPage, WorksPage,ContactPage],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
