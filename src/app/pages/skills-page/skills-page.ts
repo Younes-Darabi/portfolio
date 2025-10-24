@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { Skill } from './../interface/skill';
+import { Skill } from '../../interface/skill';
 
 @Component({
-  selector: 'app-my-skill',
+  selector: 'app-skills-page',
   imports: [],
-  templateUrl: './my-skill.html',
-  styleUrl: './my-skill.scss'
+  templateUrl: './skills-page.html',
+  styleUrl: './skills-page.scss'
 })
-export class MySkill {
+export class SkillsPage {
   skills: Skill[] = [
     {
       name: 'Angular',

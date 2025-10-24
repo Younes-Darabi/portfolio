@@ -1,7 +1,7 @@
 section {
     font-family: 'Quantico';
     display: flex;
-    width: calc(100vw - 170px);
+    width: calc(100vw - 320px);
     height: calc(100vh - 150px);
 
     .title {
@@ -21,21 +21,25 @@ section {
         div {
             display: flex;
             flex-wrap: wrap;
-            // gap: 10px;
-            // justify-content: center;
-            // align-items: center;
+
 
             .single_skill {
                 display: flex;
                 width: 140px;
-                height: 90px;
                 flex-direction: column;
                 align-items: center;
                 padding: 20px 10px;
+                gap: 10px;
 
                 img {
                     height: 60px;
                 }
+            }
+
+            .skill_text {
+                width: 250px;
+                padding-top: 40px;
+                padding-left: 40px;
             }
         }
     }
@@ -44,9 +48,10 @@ section {
         display: flex;
         align-items: center;
         padding: 70px;
+        margin-top: -70px;
 
         img {
-            width: 107px;
+            width: 100px;
             cursor: pointer;
         }
     }

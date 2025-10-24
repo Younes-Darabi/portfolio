@@ -1,5 +1,4 @@
 export interface Project{
-    id:number;
     name:string;
     about:string;
     technologies: string;

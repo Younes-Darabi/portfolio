@@ -1,0 +1,31 @@
+section {
+    display: flex;
+    width: calc(100vw - 150px);
+    height: 100vh;
+
+    div {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: end;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            padding-bottom: 10%;
+        }
+
+        h3 {
+            color: transparent;
+            -webkit-text-stroke: 1px #b5e93b;
+        }
+    }
+
+    img {
+        width: 100px;
+        margin: 70px;
+        cursor: pointer;
+        margin-top: -200px;
+    }
+}

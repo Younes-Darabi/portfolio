@@ -1,0 +1,20 @@
+<section>
+    <div class="title_references">
+        <h2>References</h2>
+    </div>
+    <div class="div_references">
+        @for (reference of References; track $index) {
+        <div class="div_frame">
+            <p>{{reference.comment}}</p>
+            <div class="linie"></div>
+            <div>
+                <h4>{{reference.name}}</h4>
+                <span>{{reference.projectName}}</span>
+            </div>
+        </div>
+        }
+    </div>
+    <div class="arrow">
+        <img src="/assets/img/right--.svg" alt="right arrow">
+    </div>
+    <section>

@@ -1,7 +1,6 @@
 section {
-    font-family: 'Quantico';
     display: flex;
-    width: calc(100vw - 170px);
+    width: calc(100vw - 320px);
     height: calc(100vh - 150px);
     margin-top: 150px;
 
@@ -30,9 +29,11 @@ section {
                 flex-direction: column;
                 transition: all 400ms ease-in-out;
                 gap: 10px;
-                img{
+
+                img {
                     height: 40px;
                 }
+
                 &:hover {
                     color: #b5e93b;
                     cursor: default;
@@ -63,10 +64,11 @@ section {
     .arrow {
         display: flex;
         align-items: end;
-        padding: 100px;
+        padding: 70px;
+        margin-bottom: 120px;
 
         img {
-            width: 107px;
+            width: 100px;
             cursor: pointer;
         }
     }

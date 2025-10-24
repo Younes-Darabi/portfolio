@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { Project } from '../interface/project';
+import { Project } from './../../interface/project';
+import { ReferencesPage } from './references-page/references-page';
 
 @Component({
-  selector: 'app-my-work',
-  imports: [],
-  templateUrl: './my-work.html',
-  styleUrl: './my-work.scss'
+  selector: 'app-works-page',
+  imports: [ReferencesPage],
+  templateUrl: './works-page.html',
+  styleUrl: './works-page.scss'
 })
-export class MyWork {
+export class WorksPage {
   projects: Project[] = [
     {
-      id: 1,
       name: 'Pollo Loco1',
       about: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       technologies: 'JavaScript , HTML, CSS',
@@ -19,7 +19,6 @@ export class MyWork {
       githubUrl: '#',
       liveTestUrl: '#',
     }, {
-      id: 2,
       name: 'Pollo Loco2',
       about: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       technologies: 'JavaScript , HTML, CSS',
@@ -28,7 +27,6 @@ export class MyWork {
       githubUrl: '#',
       liveTestUrl: '#',
     }, {
-      id: 3,
       name: 'Pollo Loco3',
       about: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       technologies: 'JavaScript , HTML, CSS',
@@ -37,7 +35,6 @@ export class MyWork {
       githubUrl: '#',
       liveTestUrl: '#',
     }, {
-      id: 4,
       name: 'Pollo Loco4',
       about: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       technologies: 'JavaScript , HTML, CSS',
@@ -46,7 +43,6 @@ export class MyWork {
       githubUrl: '#',
       liveTestUrl: '#',
     }, {
-      id: 5,
       name: 'Pollo Loco5',
       about: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       technologies: 'JavaScript , HTML, CSS',

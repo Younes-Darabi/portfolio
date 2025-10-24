@@ -4,7 +4,6 @@ div {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
 
     img {
@@ -16,25 +15,17 @@ div {
     nav {
         height: 100%;
         display: flex;
-        flex: 1;
 
         ul {
             list-style: none;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
             padding: 0;
-            margin: 0;
             gap: 50px;
-
-            a {
-                text-decoration: none;
-            }
 
             li {
                 color: #4a4a4a;
-                font-family: 'Quantico';
                 font-size: 30px;
                 transition: all 300ms ease-in-out;
                 writing-mode: vertical-lr;
