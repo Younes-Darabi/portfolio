@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Reference } from './../../../interface/reference';
+import { Component , Input} from '@angular/core';
+import { Translations } from './../../../interface/language';
 
 @Component({
   selector: 'app-references-page',
@@ -8,31 +8,13 @@ import { Reference } from './../../../interface/reference';
   styleUrl: './references-page.scss'
 })
 export class ReferencesPage {
-  References: Reference[] = [
-    {
-      name: 'James Rugman',
-      projectName: 'Project Join',
-      comment: '‘‘Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.’’',
-    }, {
-      name: 'Evelyn Marx',
-      projectName: 'Project DA Bubble',
-      comment: '‘’ He is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code. ‘’',
-    }, {
-      name: 'Noah Mueller',
-      projectName: 'Project Sharkie',
-      comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
-    }, {
-      name: 'Noah Mueller',
-      projectName: 'Project Sharkie',
-      comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
-    }, {
-      name: 'Noah Mueller',
-      projectName: 'Project Sharkie',
-      comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
-    }, {
-      name: 'Noah Mueller',
-      projectName: 'Project Sharkie',
-      comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
+    @Input() myLanguage!: string;
+  language: any = Translations.en;
+  ngOnChanges() {
+    if (this.myLanguage == 'de') {
+      this.language = Translations.de;
+    } else {
+      this.language = Translations.en;
     }
-  ]
+  }
 }

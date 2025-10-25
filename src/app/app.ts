@@ -10,10 +10,15 @@ import { ContactPage } from "./pages/contact-page/contact-page";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Menu, SocialMedia, HeroPage, AboutPage, SkillsPage, WorksPage,ContactPage],
+  imports: [RouterOutlet, Menu, SocialMedia, HeroPage, AboutPage, SkillsPage, WorksPage, ContactPage],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App {
 
+export class App {
+  language: string = 'en';
+
+  changeLanguage(value: string) {
+    this.language = value;
+  }
 }

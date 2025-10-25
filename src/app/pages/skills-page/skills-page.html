@@ -1,20 +1,17 @@
 <section>
     <div class="title">
-        <h2>My Skill Set</h2>
+        <h2>{{language.mySkills.title}}</h2>
     </div>
     <div class="div_skills">
-        <p>A short introduction of your skills. Highlight your experience of working on different projects using
-            different
-            front-end technologies and emphasise your openness to learning and adapting to new technologies.</p>
+        <p>{{language.mySkills.description}}</p>
         <div>
-            @for (item of skills; track $index) {
+            @for (item of language.mySkills.technologies; track $index) {
             <div class="single_skill">
                 <img src="{{item.image}}" alt="">
                 <p>{{item.name}}</p>
             </div>
             }
-            <p class="skill_text">Show that you are motivated to improve your skills, implement innovative solutions and stay abreast of
-                new technologies.</p>
+            <p class="skill_text">{{language.mySkills.challengeMe}}</p>
         </div>
     </div>
     <div class="arrow">

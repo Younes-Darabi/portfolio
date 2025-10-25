@@ -1,9 +1,9 @@
 <section>
     <div class="title_references">
-        <h2>References</h2>
+        <h2>{{language.referencesPage.title}}</h2>
     </div>
     <div class="div_references">
-        @for (reference of References; track $index) {
+        @for (reference of language.referencesPage.references; track $index) {
         <div class="div_frame">
             <p>{{reference.comment}}</p>
             <div class="linie"></div>

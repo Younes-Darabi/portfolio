@@ -22,7 +22,6 @@ section {
             display: flex;
             flex-wrap: wrap;
 
-
             .single_skill {
                 display: flex;
                 width: 140px;
@@ -30,6 +29,7 @@ section {
                 align-items: center;
                 padding: 20px 10px;
                 gap: 10px;
+                text-align: center;
 
                 img {
                     height: 60px;
@@ -37,7 +37,7 @@ section {
             }
 
             .skill_text {
-                width: 250px;
+                width: 260px;
                 padding-top: 40px;
                 padding-left: 40px;
             }

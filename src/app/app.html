@@ -1,12 +1,12 @@
 <div>
-    <app-menu></app-menu>
+    <app-menu [myLanguage]="this.language" />
     <div>
-        <app-social-media/>
-        <app-hero-page id="hero-page"/>
-        <app-about-page id="about-page"/>
-        <app-skills-page id="skills-page"/>
-        <app-works-page id="works-page"/>
-        <app-contact-page id="contact-page"/>
+        <app-social-media (languageSwitcher)="changeLanguage($event)" />
+        <app-hero-page id="hero-page" [myLanguage]="this.language" />
+        <app-about-page id="about-page" [myLanguage]="this.language" />
+        <app-skills-page id="skills-page" [myLanguage]="this.language" />
+        <app-works-page id="works-page" [myLanguage]="this.language" />
+        <app-contact-page id="contact-page" [myLanguage]="this.language" />
     </div>
 </div>
 

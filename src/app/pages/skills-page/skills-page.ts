@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Skill } from '../../interface/skill';
+import { Component, Input } from '@angular/core';
+import { Translations } from './../../interface/language';
 
 @Component({
   selector: 'app-skills-page',
@@ -8,48 +8,13 @@ import { Skill } from '../../interface/skill';
   styleUrl: './skills-page.scss'
 })
 export class SkillsPage {
-  skills: Skill[] = [
-    {
-      name: 'Angular',
-      image: '/assets/img/icons/my-skills/frontend/angular.svg'
-    },
-    {
-      name: 'TypeScript',
-      image: '/assets/img/icons/my-skills/frontend/ts.svg'
-    },
-    {
-      name: 'JavaScript',
-      image: '/assets/img/icons/my-skills/frontend/Javascript.svg'
-    },
-    {
-      name: 'HTML',
-      image: '/assets/img/icons/my-skills/frontend/html.svg'
-    },    {
-      name: 'CSS',
-      image: '/assets/img/icons/my-skills/frontend/css.svg'
-    },
-    {
-      name: 'REST-API',
-      image: '/assets/img/icons/my-skills/frontend/api.svg'
-    },
-    {
-      name: 'Firebase',
-      image: '/assets/img/icons/my-skills/frontend/Firebase.svg'
-    },
-    {
-      name: 'Git',
-      image: '/assets/img/icons/my-skills/frontend/git.svg'
-    },    {
-      name: 'Scrum',
-      image: '/assets/img/icons/my-skills/frontend/scrum.svg'
-    },
-    {
-      name: 'Material design',
-      image: '/assets/img/icons/my-skills/frontend/material-design.svg'
-    },
-    {
-      name: 'Challange me',
-      image: '/assets/img/icons/my-skills/frontend/challange-me.svg'
-    },
-  ]
+  @Input() myLanguage!: string;
+  language: any = Translations.en;
+  ngOnChanges() {
+    if (this.myLanguage == 'de') {
+      this.language = Translations.de;
+    } else {
+      this.language = Translations.en;
+    }
+  }
 }

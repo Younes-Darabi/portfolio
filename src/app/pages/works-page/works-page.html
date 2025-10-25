@@ -1,59 +1,57 @@
 <section>
     <div class="why_me">
-        <h2>My Work</h2>
+        <h2>{{language.menu.myWork}}</h2>
     </div>
     <div class="div_for">
-        @for (project of projects; track $index) {
+        @for (project of language.myWorks.projects; track $index) {
         <div class="div_project">
             <div class="div_project_name">
                 <h1>{{$index+1}}</h1>
-                <p>Project {{project.name}}</p>
+                <p>{{project.projectName}}</p>
             </div>
             <div class="div_project_about">
                 <div class="div_info">
                     <div class="circle">
                         <img src="assets/img/icons/my-project/ellipse.svg">
-                        <h4>About the project</h4>
+                        <h4>{{project.aboutTitle}}</h4>
                     </div>
-                    <p>{{project.about}}</p>
+                    <p>{{project.aboutProject}}</p>
                     <div class="circle">
                         <img src="assets/img/icons/my-project/ellipse.svg">
-                        <h4>Technologies I have used</h4>
+                        <h4>{{project.technologiesTitle}}</h4>
                     </div>
                     <p>{{project.technologies}}</p>
                 </div>
                 <div class="div_img_btn">
-                    <img src="{{project.image}}" alt="">
+                    <img src="{{project.imageUrl}}" alt="">
                     <div class="div_btn">
                         <a href="{{project.githubUrl}}" class="btn_github">GitHub</a>
-                        <a href="{{project.liveTestUrl}}" class="btn_live">Live Test</a>
+                        <a href="{{project.liveUrl}}" class="btn_live">Live Test</a>
                     </div>
                 </div>
             </div>
             <div class="div_info2">
                 <div class="circle">
                     <img src="assets/img/icons/my-project/ellipse.svg">
-                    <h4>My group-projects experience</h4>
+                    <h4>{{project.mehrTitle}}</h4>
                 </div>
-                <p>{{project.experience}}</p>
+                <p>{{project.mehrText}}</p>
             </div>
         </div>
         }
         <div>
             <div class="div_Ongoing_project">
                 <div class="div_op_title">
-                    <h3>{{projects.length+1}}</h3>
-                    <p class="op_title">Ongoing project</p>
+                    <h3>{{language.myWorks.projects.length +1}}</h3>
+                    <p class="op_title">{{language.myWorks.ongoingProject.title}}</p>
                 </div>
-                <p>Are you currently working on a project?
-                    What is it about and what technologies are you using? Emphasise that good planning and execution are
-                    essential to the success of your work and to achieving great results.</p>
-                <div class="div_talk"><a href="#">Let's talk</a></div>
+                <p>{{language.myWorks.ongoingProject.description}}</p>
+                <div class="div_talk"><a href="#">{{language.myWorks.ongoingProject.talkTitle}}</a></div>
             </div>
         </div>
     </div>
     <div class="arrow">
         <img src="/assets/img/right--.svg" alt="right arrow">
     </div>
-    <app-references-page />
+    <app-references-page [myLanguage]="this.myLanguage"/>
 </section>

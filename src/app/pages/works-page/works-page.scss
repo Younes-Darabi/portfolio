@@ -60,6 +60,10 @@ section {
                 display: flex;
                 flex-direction: column;
 
+                img{
+                    border-radius: 30px;
+                }
+
                 .div_btn {
                     display: flex;
                     justify-content: space-evenly;
