@@ -4,17 +4,27 @@
     </div>
 
     <div class="form">
-        <form class="contact_form">
-            <input type="text" placeholder="{{language.contact.form.name}}" />
-            <input type="email" placeholder="{{language.contact.form.email}}" />
-            <textarea placeholder="{{language.contact.form.message}}"></textarea>
+        <form class="contact_form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+            <input [(ngModel)]="contactData.name" type="text" name="name" placeholder="{{language.contact.form.name}}"
+                required />
+            <input [(ngModel)]="contactData.email" type="email" name="email"
+                placeholder="{{language.contact.form.email}}" required
+                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
+            <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" minlength="5"
+                placeholder="{{language.contact.form.message}}" required></textarea>
+            @if (!message.valid && message.touched && !message.disabled) {
+            <span class="error">{{language.contact.form.error}}</span>
+            }
 
             <label class="privacy">
-                <input type="checkbox" />
+                <input name="privacy" type="checkbox" required [(ngModel)]="contactData.privacyAccepted" />
                 <span>{{language.contact.form.privacyText}}</span>
             </label>
-
-            <button type="submit" disabled>{{language.contact.form.sendButton}}</button>
+            <button type="submit" name="submit"
+                [disabled]="!contactData.privacyAccepted">{{language.contact.form.sendButton}}</button>
+            @if (this.contactData.emailSent == true){
+            <p class="email_sent">{{language.contact.form.emailSent}}</p>
+            }
         </form>
     </div>
 

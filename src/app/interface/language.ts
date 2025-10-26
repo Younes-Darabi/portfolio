@@ -152,13 +152,15 @@ export const Translations = {
                 email: "Your e-mail",
                 message: "Your message",
                 privacyText: "I've read the privacy policy and agree to the processing of my data as outlined.",
-                sendButton: "Send"
+                sendButton: "Send",
+                error: "Please enter a message!",
+                emailSent: "Thank you! Your message has been received successfully.",
             },
             invitationTitle: "Let us work together.",
             invitationText: "Feel free to get in touch if you would like to collaborate or learn more about my work. I am confident that my expertise and enthusiasm for continuous learning can make a valuable contribution to your team.",
             contactInfo: {
-                email: "E-mail: m.huber@gmail.com",
-                tel: "Tel: 0157 123 456 68"
+                email: "E-mail: info@younes-darabi.de",
+                tel: "Tel: 017687853794"
             },
             links: {
                 legalNotice: "Legal notice",
@@ -321,13 +323,15 @@ export const Translations = {
                 email: "Ihre E-Mail",
                 message: "Ihre Nachricht",
                 privacyText: "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten gemäß den dort beschriebenen Bedingungen zu.",
-                sendButton: "Senden"
+                sendButton: "Senden",
+                error: "Bitte geben Sie eine Nachricht ein!",
+                emailSent: "Danke! Ihre Nachricht ist erfolgreich angekommen.",
             },
             invitationTitle: "Lass uns zusammenarbeiten.",
             invitationText: "Kontaktieren Sie mich gerne, wenn Sie an einer Zusammenarbeit interessiert sind oder mehr über meine Arbeit erfahren möchten. Ich bin überzeugt, dass ich mit meinem Fachwissen und meiner Begeisterung für kontinuierliche Weiterentwicklung einen wertvollen Beitrag zu Ihrem Team leisten kann.",
             contactInfo: {
-                email: "E-Mail: m.huber@gmail.com",
-                tel: "Tel: 0157 123 456 68"
+                email: "E-Mail: info@younes-darabi.de",
+                tel: "Tel: 017687853794"
             },
             links: {
                 legalNotice: "Impressum",

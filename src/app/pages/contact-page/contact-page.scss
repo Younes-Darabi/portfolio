@@ -50,6 +50,10 @@ section {
             border-radius: 20px;
         }
 
+        .error{
+            color: red;
+        }
+
         .privacy {
             display: flex;
             align-items: flex-start;
@@ -93,6 +97,10 @@ section {
                 cursor: pointer;
                 opacity: 1;
             }
+        }
+
+        .email_sent{
+            color: #b5e93b;
         }
     }
 
