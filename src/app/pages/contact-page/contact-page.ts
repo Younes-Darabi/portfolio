@@ -1,7 +1,7 @@
-import { Component, inject, Input } from '@angular/core';
-import { Translations } from './../../interface/language';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { Languages } from './../../services/languages';
 
 @Component({
   selector: 'app-contact-page',
@@ -12,15 +12,7 @@ import { HttpClient } from '@angular/common/http';
 export class ContactPage {
   http = inject(HttpClient);
 
-  @Input() myLanguage!: string;
-  language: any = Translations.en;
-  ngOnChanges() {
-    if (this.myLanguage == 'de') {
-      this.language = Translations.de;
-    } else {
-      this.language = Translations.en;
-    }
-  }
+  languages = inject(Languages);
 
   contactData = {
     name: "",

@@ -1,9 +1,9 @@
 <section>
     <div class="why_me">
-        <h2>{{language.menu.myWork}}</h2>
+        <h2>{{languages.websiteLanguage.menu.myWork}}</h2>
     </div>
     <div class="div_for">
-        @for (project of language.myWorks.projects; track $index) {
+        @for (project of languages.websiteLanguage.myWorks.projects; track $index) {
         <div class="div_project">
             <div class="div_project_name">
                 <h1>{{$index+1}}</h1>
@@ -42,16 +42,16 @@
         <div>
             <div class="div_Ongoing_project">
                 <div class="div_op_title">
-                    <h3>{{language.myWorks.projects.length +1}}</h3>
-                    <p class="op_title">{{language.myWorks.ongoingProject.title}}</p>
+                    <h3>{{languages.websiteLanguage.myWorks.projects.length +1}}</h3>
+                    <p class="op_title">{{languages.websiteLanguage.myWorks.ongoingProject.title}}</p>
                 </div>
-                <p>{{language.myWorks.ongoingProject.description}}</p>
-                <div class="div_talk"><a href="#">{{language.myWorks.ongoingProject.talkTitle}}</a></div>
+                <p>{{languages.websiteLanguage.myWorks.ongoingProject.description}}</p>
+                <div class="div_talk"><a href="#">{{languages.websiteLanguage.myWorks.ongoingProject.talkTitle}}</a></div>
             </div>
         </div>
     </div>
     <div class="arrow">
         <img src="/assets/img/right--.svg" alt="right arrow">
     </div>
-    <app-references-page [myLanguage]="this.myLanguage"/>
+    <app-references-page/>
 </section>

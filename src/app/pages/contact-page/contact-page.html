@@ -1,42 +1,42 @@
 <section>
     <div class="contact_me">
-        <h2>{{language.contact.title}}</h2>
+        <h2>{{languages.websiteLanguage.contact.title}}</h2>
     </div>
 
     <div class="form">
         <form class="contact_form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-            <input [(ngModel)]="contactData.name" type="text" name="name" placeholder="{{language.contact.form.name}}"
+            <input [(ngModel)]="contactData.name" type="text" name="name" placeholder="{{languages.websiteLanguage.contact.form.name}}"
                 required />
             <input [(ngModel)]="contactData.email" type="email" name="email"
-                placeholder="{{language.contact.form.email}}" required
+                placeholder="{{languages.websiteLanguage.contact.form.email}}" required
                 pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
             <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" minlength="5"
-                placeholder="{{language.contact.form.message}}" required></textarea>
+                placeholder="{{languages.websiteLanguage.contact.form.message}}" required></textarea>
             @if (!message.valid && message.touched && !message.disabled) {
-            <span class="error">{{language.contact.form.error}}</span>
+            <span class="error">{{languages.websiteLanguage.contact.form.error}}</span>
             }
 
             <label class="privacy">
                 <input name="privacy" type="checkbox" required [(ngModel)]="contactData.privacyAccepted" />
-                <span>{{language.contact.form.privacyText}}</span>
+                <span>{{languages.websiteLanguage.contact.form.privacyText}}</span>
             </label>
             <button type="submit" name="submit"
-                [disabled]="!contactData.privacyAccepted">{{language.contact.form.sendButton}}</button>
+                [disabled]="!contactData.privacyAccepted">{{languages.websiteLanguage.contact.form.sendButton}}</button>
             @if (this.contactData.emailSent == true){
-            <p class="email_sent">{{language.contact.form.emailSent}}</p>
+            <p class="email_sent">{{languages.websiteLanguage.contact.form.emailSent}}</p>
             }
         </form>
     </div>
 
     <div class="div_info">
-        <span>{{language.contact.invitationTitle}}</span>
-        <p>{{language.contact.invitationText}}</p>
-        <p class="email"><img>{{language.contact.contactInfo.email}}</p>
-        <p class="phone"><img>{{language.contact.contactInfo.tel}}</p>
+        <span>{{languages.websiteLanguage.contact.invitationTitle}}</span>
+        <p>{{languages.websiteLanguage.contact.invitationText}}</p>
+        <p class="email"><img>{{languages.websiteLanguage.contact.contactInfo.email}}</p>
+        <p class="phone"><img>{{languages.websiteLanguage.contact.contactInfo.tel}}</p>
         <img class="arrow" src="/assets/img/left--.svg" alt="right arrow">
-        <p>{{language.contact.links.legalNotice}}</p><br>
-        <p>{{language.contact.links.privacyPolicy}}</p><br>
-        <p>{{language.contact.footer}}</p><br>
+        <p>{{languages.websiteLanguage.contact.links.legalNotice}}</p><br>
+        <p>{{languages.websiteLanguage.contact.links.privacyPolicy}}</p><br>
+        <p>{{languages.websiteLanguage.contact.footer}}</p><br>
     </div>
     <div class="end_green"></div>
 </section>

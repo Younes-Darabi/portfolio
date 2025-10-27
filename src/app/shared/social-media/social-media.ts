@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Languages } from './../../services/languages';
 
 @Component({
   selector: 'app-social-media',
@@ -7,9 +8,5 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './social-media.scss'
 })
 export class SocialMedia {
-  @Output() languageSwitcher = new EventEmitter<string>();
-
-  changeLanguage(value:string){
-    this.languageSwitcher.emit(value);
-  }
+  languages = inject(Languages);
 }

@@ -1,17 +1,17 @@
 <section>
     <div class="title">
-        <h2>{{language.mySkills.title}}</h2>
+        <h2>{{languages.websiteLanguage.mySkills.title}}</h2>
     </div>
     <div class="div_skills">
-        <p>{{language.mySkills.description}}</p>
+        <p>{{languages.websiteLanguage.mySkills.description}}</p>
         <div>
-            @for (item of language.mySkills.technologies; track $index) {
+            @for (item of languages.websiteLanguage.mySkills.technologies; track $index) {
             <div class="single_skill">
                 <img src="{{item.image}}" alt="">
                 <p>{{item.name}}</p>
             </div>
             }
-            <p class="skill_text">{{language.mySkills.challengeMe}}</p>
+            <p class="skill_text">{{languages.websiteLanguage.mySkills.challengeMe}}</p>
         </div>
     </div>
     <div class="arrow">

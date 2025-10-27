@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { Translations } from './../../interface/language';
+import { Component, inject } from '@angular/core';
+import { Languages } from './../../services/languages';
 
 @Component({
   selector: 'app-skills-page',
@@ -8,13 +8,5 @@ import { Translations } from './../../interface/language';
   styleUrl: './skills-page.scss'
 })
 export class SkillsPage {
-  @Input() myLanguage!: string;
-  language: any = Translations.en;
-  ngOnChanges() {
-    if (this.myLanguage == 'de') {
-      this.language = Translations.de;
-    } else {
-      this.language = Translations.en;
-    }
-  }
+  languages = inject(Languages);
 }
