@@ -5,9 +5,15 @@ html {
 body {
   height: 100vh;
   overflow-y: hidden;
-  background-color: #000000;
+  background: linear-gradient(to right, #000000, #2c2b2c, #0b0a0a, #323232, #0b0a0a);
+  background-size: 650%;
   margin: 0;
   font-family: 'Quantico';
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 h1 {
@@ -60,17 +66,22 @@ p {
 
 /* quantico-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Quantico';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/fonts/quantico-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/assets/fonts/quantico-v19-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* quantico-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Quantico';
   font-style: normal;
   font-weight: 700;
-  src: url('/assets/fonts/quantico-v19-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/assets/fonts/quantico-v19-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }

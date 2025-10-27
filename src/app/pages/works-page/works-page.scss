@@ -60,7 +60,7 @@ section {
                 display: flex;
                 flex-direction: column;
 
-                img{
+                img {
                     border-radius: 30px;
                 }
 
@@ -86,12 +86,23 @@ section {
                         background-color: #3E4926;
                         border: 1px solid #b5e93b;
                         color: #b5e93b;
+                        transition: all 200ms ease-in-out;
+
+                        &:hover {
+                            background-color: #5e6e3b;
+                            color: white;
+                        }
                     }
 
                     .btn_live {
-                        background-color: #b5e93b;
+                        background: linear-gradient(#b5e93b, #b5e93b);
                         color: #252525;
                         border-style: none;
+                        transition: all 250ms ease-in-out;
+
+                        &:hover {
+                            background: linear-gradient(#b5e93b, #547800);
+                        }
                     }
                 }
             }
@@ -109,7 +120,7 @@ section {
     .div_Ongoing_project {
         width: 350px;
 
-        .div_op_title{
+        .div_op_title {
             display: flex;
             align-items: end;
             gap: 15px;
@@ -139,9 +150,13 @@ section {
             cursor: pointer;
             border-radius: 30px;
             text-decoration: none;
-            background-color: #b5e93b;
+            background: linear-gradient(#b5e93b, #b5e93b);
             color: #252525;
             border-style: none;
+
+            &:hover {
+                background: linear-gradient(#b5e93b, #547800);
+            }
         }
     }
 

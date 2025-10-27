@@ -33,6 +33,10 @@ section {
 
                 img {
                     height: 60px;
+                    background-color: transparent;
+                    &:hover{
+                        filter: drop-shadow(0 0 20px #b5e93b83);
+                    }
                 }
             }
 

@@ -289,7 +289,7 @@ export class Languages {
       ongoingProject: {
         title: "Laufendes Projekt",
         description: "Derzeit arbeite ich an einem neuen Projekt, das den Fokus auf Benutzerfreundlichkeit, klares Design und effiziente Performance legt. Ich nutze moderne Frontend-Technologien, um skalierbare und wartbare Webanwendungen zu entwickeln. Für mich sind gute Planung und präzise Umsetzung entscheidend, um hochwertige Ergebnisse zu erzielen.",
-        talkTitle: "Lass uns reden",
+        talkTitle: "Kontakt",
       }
     },
     referencesPage: {
