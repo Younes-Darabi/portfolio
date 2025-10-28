@@ -5,15 +5,16 @@ html {
 body {
   height: 100vh;
   overflow-y: hidden;
+  
   background: linear-gradient(to right, #000000, #2c2b2c, #0b0a0a, #323232, #0b0a0a);
   background-size: 650%;
   margin: 0;
   font-family: 'Quantico';
   cursor: default;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  // user-select: none;
+  // -webkit-user-select: none;
+  // -moz-user-select: none;
+  // -ms-user-select: none;
 }
 
 h1 {
