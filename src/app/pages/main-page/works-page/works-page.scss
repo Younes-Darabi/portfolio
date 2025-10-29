@@ -22,6 +22,11 @@ section {
         background-color: #3E4926;
         border-radius: 30px;
         padding: 10px 40px;
+        opacity: 0.8;
+        transition: all 250ms ease-in;
+        &:hover{
+            opacity: 1;
+        }
 
         .div_project_name {
             display: flex;

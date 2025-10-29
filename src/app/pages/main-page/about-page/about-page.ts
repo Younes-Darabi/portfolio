@@ -1,9 +1,10 @@
 import { Component, inject } from '@angular/core';
-import { Languages } from './../../services/languages';
+import { Languages } from './../../../services/languages';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-about-page',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './about-page.html',
   styleUrl: './about-page.scss'
 })

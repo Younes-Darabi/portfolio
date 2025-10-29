@@ -92,13 +92,13 @@ export class Languages {
         aboutProject:
           "An interactive 2D jump-and-run browser game developed with object-oriented JavaScript. The player controls Sharkie, a small fish, to collect coins, defeat enemies, and survive underwater challenges.",
         technologiesTitle: "Technologies I have used",
-        technologies: "JavaScript (OOP), HTML, CSS",
+        technologies: "JavaScript, HTML, CSS",
         mehrTitle: "What I have learned",
         mehrText:
           "This project helped me strengthen my understanding of object-oriented programming, animation handling, and performance optimization in pure JavaScript.",
         imageUrl: "/assets/img/projects/sharkie.jpg",
-        githubUrl: "#",
-        liveUrl: "#"
+        githubUrl: "https://github.com/Younes-Darabi/Sharkie",
+        liveUrl: "https://younes-darabi.de/assets/projects/Sharkie/index.html"
       },
       {
         projectName: "Project Pokédex",
@@ -111,8 +111,8 @@ export class Languages {
         mehrText:
           "I gained practical experience working with APIs, handling asynchronous data, and creating clean, reusable UI components.",
         imageUrl: "/assets/img/projects/pokemon.jpg",
-        githubUrl: "#",
-        liveUrl: "#"
+        githubUrl: "https://github.com/Younes-Darabi/Pokemon",
+        liveUrl: "https://younes-darabi.de/assets/projects/Pokedex/index.html"
       }],
       ongoingProject: {
         title: "Ongoing Project",
@@ -191,6 +191,22 @@ export class Languages {
       liabilityText: "This website contains links to external websites of third parties over whose contents I have no control. Therefore, I cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages.",
       copyrightTitle: "copyright",
       copyrightText: "The content and works created by the site operator are subject to German copyright law. Reproduction, editing, distribution, or any use beyond the limits of copyright law requires the written consent of the respective author."
+    },
+    privacyPolicy: {
+      mainTitle: "Privacy Policy",
+      introTitle: "General Information",
+      introText: "Protecting your personal data is very important to me. I treat your personal data confidentially and in accordance with the legal data protection regulations and this privacy policy.",
+      dataCollectionTitle: "Collection and Processing of Personal Data",
+      dataCollectionText: "Personal data is collected on this website only to the extent necessary. If you contact me via email, your information will be stored for the purpose of processing your request and in case of follow-up questions. This data will not be shared without your consent.",
+      cookiesTitle: "Cookies",
+      cookiesText: "This website does not use cookies for analytics or tracking purposes.However, technically necessary cookies may be set to ensure the proper functioning of the website.",
+      thirdPartyTitle: "Disclosure of Data to Third Parties",
+      thirdPartyText: "Your data will only be transferred to third parties if required by law or if you have explicitly consented to it.",
+      rightsTitle: "Your Rights",
+      rightsText: "You have the right to request information about your stored personal data at any time, as well as the right to correct, block, or delete this data.For this purpose, and for further questions about data protection, you can contact me at any time using the address provided in the legal notice.",
+      contactTitle: "Contact",
+      contactText: "For questions regarding data protection, please contact: Younes Darabi, Langenhainer Str. 1, 28307 Bremen, Germany – Email: info@younes-darabi.de",
+      date: "Last updated: October 2025"
     }
   }
 
@@ -382,6 +398,22 @@ export class Languages {
       liabilityText: "Diese Webseite enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen Einfluss habe. Daher kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
       copyrightTitle: "Urheberrecht",
       copyrightText: "Die durch den Seitenbetreiber erstellten Inhalte und Werke auf dieser Webseite unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors."
+    },
+    privacyPolicy: {
+      mainTitle: "Datenschutzerklärung",
+      introTitle: "Allgemeine Hinweise",
+      introText: "Diese Website ist ein persönliches Portfolio. Es werden keine personenbezogenen Daten erhoben, gespeichert oder weitergegeben. Es werden keine Cookies oder Analysetools verwendet.",
+      dataCollectionTitle: "Erhebung und Verarbeitung personenbezogener Daten",
+      dataCollectionText: "Personenbezogene Daten werden auf dieser Website nur im notwendigen Umfang verarbeitet. Wenn Sie mir per E-Mail Anfragen senden, werden diese Daten nur zur Bearbeitung Ihrer Anfrage verwendet und nicht weitergegeben.",
+      cookiesTitle: "Cookies",
+      cookiesText: "Diese Website verwendet keine Cookies für Analyse- oder Trackingzwecke. Technisch notwendige Cookies können jedoch gesetzt werden, um die Funktion der Website sicherzustellen.",
+      thirdPartyTitle: "Weitergabe an Dritte",
+      thirdPartyText: "Ihre Daten werden nur dann an Dritte weitergegeben, wenn dies gesetzlich vorgeschrieben ist oder Sie ausdrücklich eingewilligt haben.",
+      rightsTitle: "Ihre Rechte",
+      rightsText: "Sie haben jederzeit das Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten sowie das Recht auf Berichtigung, Sperrung oder Löschung. Für Fragen zum Datenschutz können Sie sich jederzeit über die im Impressum angegebene Adresse an mich wenden.",
+      contactTitle: "Kontakt",
+      contactText: "Für Fragen zum Datenschutz kontaktieren Sie bitte: Younes Darabi, Langenhainer Str. 1, 28307 Bremen, Deutschland – E-Mail: info@younes-darabi.de",
+      date: "Letzte Aktualisierung: Oktober 2025"
     }
   };
 

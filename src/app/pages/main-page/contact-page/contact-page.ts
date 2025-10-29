@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { Languages } from './../../services/languages';
+import { Languages } from './../../../services/languages';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact-page',
-  imports: [FormsModule],
+  imports: [FormsModule,RouterModule],
   templateUrl: './contact-page.html',
   styleUrl: './contact-page.scss'
 })

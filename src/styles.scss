@@ -11,10 +11,10 @@ body {
   margin: 0;
   font-family: 'Quantico';
   cursor: default;
-  // user-select: none;
-  // -webkit-user-select: none;
-  // -moz-user-select: none;
-  // -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 h1 {

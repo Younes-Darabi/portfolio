@@ -1,5 +1,5 @@
 import { Component,inject} from '@angular/core';
-import { Languages} from './../../services/languages';
+import { Languages} from './../../../services/languages';
 
 @Component({
   selector: 'app-hero-page',

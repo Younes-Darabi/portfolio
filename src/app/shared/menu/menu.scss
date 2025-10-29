@@ -6,12 +6,17 @@ div {
     flex-direction: column;
     align-items: center;
 
+    li {
+        list-style: none;
+    }
+
     img {
         width: 80px;
         height: 80px;
         padding-top: 50px;
         transition: all 0.4s ease-in-out;
-        &:hover{
+
+        &:hover {
             scale: 1.02;
         }
     }
@@ -21,7 +26,6 @@ div {
         display: flex;
 
         ul {
-            list-style: none;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -35,9 +39,14 @@ div {
                 writing-mode: vertical-lr;
                 transform: rotate(180deg);
 
-                &:hover {
-                    color: white;
-                    cursor: pointer;
+                a {
+                    color: #4a4a4a;
+                    transition: all 400ms ease-out;
+
+                    &:hover {
+                        color: white;
+                        cursor: pointer;
+                    }
                 }
             }
 
