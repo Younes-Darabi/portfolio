@@ -1,17 +1,25 @@
 section {
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: calc(100vw - 170px);
+    height: calc(100vh - 90px);
+    margin-left: 170px;
+    margin-top: 90px;
 
-    div {
+    .title {
         display: flex;
         flex: 1;
         justify-content: center;
         align-items: end;
+        position: relative;
 
-        div {
+        .img_profile {
+            position: absolute;
+        }
+
+        .text {
             display: flex;
             flex-direction: column;
+            align-items: end;
             position: absolute;
             padding-bottom: 10%;
         }
@@ -22,15 +30,15 @@ section {
         }
     }
 
-    a {
-        display: flex;
-        margin-top: -250px;
-
-        img {
-            width: 100px;
-            margin: 70px;
-            cursor: pointer;
-
+    .arrow {
+        a {
+            display: flex;
+            img {
+                width: 100px;
+                margin: 70px;
+                margin-top: 250px;
+                cursor: pointer;
+            }
         }
     }
 }

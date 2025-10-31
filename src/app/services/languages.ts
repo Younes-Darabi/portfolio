@@ -83,8 +83,8 @@ export class Languages {
         mehrText:
           "I learned how to implement dynamic task handling with Firebase, improve my component structure in Angular, and maintain clean, scalable code across different modules.",
         imageUrl: "/assets/img/projects/join.jpg",
-        githubUrl: "#",
-        liveUrl: "#"
+        githubUrl: "",
+        liveUrl: ""
       },
       {
         projectName: "Project Sharkie",
@@ -180,13 +180,17 @@ export class Languages {
       title: "Imprint",
       owner: {
         name: "Younes Darabi",
-        address: "Langenhainer Str. 1",
-        city: "28307 Bremen",
-        phone: "+49 176 87853794",
+        address: "Test Str. 1",
+        // address: "Langenhainer Str. 1",        
+        city: "28195 Bremen",
+        // city: "28307 Bremen",
+        phone: "+49 123 456789",
+        // phone: "+49 176 87853794",
         email: "info@younes-darabi.de",
       },
       representation: "Represented by:",
-      responsibleContent: "Responsible for content according to § 55 Abs. 2 RStV: Younes Darabi, Langenhainer Str. 1, 28307 Bremen, Germany",
+      responsibleContent: "Responsible for content according to § 55 Abs. 2 RStV: Younes Darabi.",
+      // responsibleContent: "Responsible for content according to § 55 Abs. 2 RStV: Younes Darabi, Langenhainer Str. 1, 28307 Bremen, Germany",
       disclaimerTitle: "Disclaimer",
       disclaimerText: "The contents of this website were created with great care. However, I cannot guarantee the accuracy, completeness, or timeliness of the content.",
       liabilityTitle: "Liability for Links",
@@ -207,7 +211,7 @@ export class Languages {
       rightsTitle: "Your Rights",
       rightsText: "You have the right to request information about your stored personal data at any time, as well as the right to correct, block, or delete this data.For this purpose, and for further questions about data protection, you can contact me at any time using the address provided in the legal notice.",
       contactTitle: "Contact",
-      contactText: "For questions regarding data protection, please contact: Younes Darabi, Langenhainer Str. 1, 28307 Bremen, Germany – Email: info@younes-darabi.de",
+      contactText: "For questions regarding data protection, please contact: Younes Darabi, Email: info@younes-darabi.de",
       date: "Last updated: October 2025"
     }
   }
@@ -292,8 +296,8 @@ export class Languages {
         mehrText:
           "Ich habe gelernt, wie man dynamische Aufgabenverwaltung mit Firebase implementiert, die Komponentenstruktur in Angular verbessert und sauberen, skalierbaren Code über verschiedene Module hinweg pflegt.",
         imageUrl: "/assets/img/projects/join.jpg",
-        githubUrl: "#",
-        liveUrl: "#"
+        githubUrl: "",
+        liveUrl: ""
       },
       {
         projectName: "Projekt Sharkie",
@@ -367,9 +371,9 @@ export class Languages {
         message: "Ihre Nachricht",
         privacyText: "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten gemäß den dort beschriebenen Bedingungen zu.",
         sendButton: "Senden",
-        errorName: "*Bitte geben Sie Ihren Namen ein!*",
-        errorEmail: "*Bitte geben Sie Ihre E-Mail-Adresse ein!*",
-        errorMessage: "*Bitte geben Sie eine Nachricht ein!*",
+        errorName: "*Bitte geben Sie Ihren Namen ein!",
+        errorEmail: "*Bitte geben Sie Ihre E-Mail-Adresse ein!",
+        errorMessage: "*Bitte geben Sie eine Nachricht ein!",
         emailSent: "Danke! Ihre Nachricht ist erfolgreich angekommen.",
       },
       invitationTitle: "Lass uns zusammenarbeiten.",
@@ -389,13 +393,17 @@ export class Languages {
       title: "Impressum",
       owner: {
         name: "Younes Darabi",
-        address: "Langenhainer Str. 1",
-        city: "28307 Bremen",
-        phone: "+49 176 87853794",
-        email: "info@younes-darabi.de"
+        address: "Test Str. 1",
+        // address: "Langenhainer Str. 1",        
+        city: "28195 Bremen",
+        // city: "28307 Bremen",
+        phone: "+49 123 456789",
+        // phone: "+49 176 87853794",
+        email: "info@younes-darabi.de",
       },
       representation: "Vertreten durch:",
-      responsibleContent: "Verantwortlich für den Inhalt gemäß § 55 Abs. 2 RStV: Younes Darabi, Langenhainer Str. 1, 28307 Bremen, Deutschland",
+      responsibleContent: "Verantwortlich für den Inhalt gemäß § 55 Abs. 2 RStV: Younes Darabi.",
+      // responsibleContent: "Verantwortlich für den Inhalt gemäß § 55 Abs. 2 RStV: Younes Darabi, Langenhainer Str. 1, 28307 Bremen, Deutschland",
       disclaimerTitle: "Haftungsausschluss",
       disclaimerText: "Die Inhalte dieser Webseite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen.",
       liabilityTitle: "Haftung für Links",
@@ -416,7 +424,7 @@ export class Languages {
       rightsTitle: "Ihre Rechte",
       rightsText: "Sie haben jederzeit das Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten sowie das Recht auf Berichtigung, Sperrung oder Löschung. Für Fragen zum Datenschutz können Sie sich jederzeit über die im Impressum angegebene Adresse an mich wenden.",
       contactTitle: "Kontakt",
-      contactText: "Für Fragen zum Datenschutz kontaktieren Sie bitte: Younes Darabi, Langenhainer Str. 1, 28307 Bremen, Deutschland – E-Mail: info@younes-darabi.de",
+      contactText: "Für Fragen zum Datenschutz kontaktieren Sie bitte: Younes Darabi, E-Mail: info@younes-darabi.de",
       date: "Letzte Aktualisierung: Oktober 2025"
     }
   };

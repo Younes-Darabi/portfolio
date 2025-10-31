@@ -1,5 +1,5 @@
-import { Component,inject} from '@angular/core';
-import { Languages} from './../../services/languages';
+import { Component, inject } from '@angular/core';
+import { Languages } from './../../services/languages';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -9,5 +9,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './menu.scss'
 })
 export class Menu {
-    languages = inject(Languages);
+  languages = inject(Languages);
 }

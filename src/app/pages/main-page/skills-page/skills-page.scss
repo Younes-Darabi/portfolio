@@ -1,6 +1,7 @@
 section {
     font-family: 'Quantico';
     display: flex;
+    align-items: flex-end;
     width: calc(100vw - 320px);
     height: calc(100vh - 150px);
 
@@ -8,14 +9,13 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        margin-bottom: 50px;
     }
 
     .div_skills {
         display: flex;
         flex: 1;
         flex-direction: column;
-        justify-content: end;
+        justify-content: flex-end;
         gap: 40px;
 
         div {
@@ -34,7 +34,8 @@ section {
                 img {
                     height: 60px;
                     background-color: transparent;
-                    &:hover{
+
+                    &:hover {
                         filter: drop-shadow(0 0 20px #b5e93b83);
                     }
                 }
@@ -60,3 +61,9 @@ section {
         }
     }
 }
+
+// @media (max-width: 1490px) {
+//     .div_skills {
+//         flex-direction: row;
+//     }
+// }

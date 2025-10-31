@@ -1,4 +1,4 @@
-div {
+.div_main {
     display: flex;
 
     app-menu {
@@ -8,9 +8,11 @@ div {
 
     div {
         display: flex;
+        flex-direction: column;
 
         app-social-media {
             position: fixed;
         }
+
     }
 }

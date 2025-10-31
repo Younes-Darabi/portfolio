@@ -1,6 +1,6 @@
 section {
     display: flex;
-    // width: calc(100vw - 170px);
+    width: calc(100vw - 210px);
     height: calc(100vh - 150px);
     margin-top: 150px;
 
@@ -11,7 +11,6 @@ section {
     }
 
     .form {
-        width: 450px;
         display: flex;
         flex: 1;
 
@@ -19,7 +18,7 @@ section {
             display: flex;
             flex-direction: column;
             gap: 20px;
-            width: 400px;
+            max-width: 500px;
         }
 
         input,
@@ -113,9 +112,15 @@ section {
     .div_info {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        text-align: right;
+        justify-content: space-between;
         width: 417px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            text-align: right;
+        }
 
         span {
             font-size: 18px;
@@ -197,7 +202,8 @@ section {
         }
     }
 
-    .legal_notice, .privacy_policy {
+    .legal_notice,
+    .privacy_policy {
         color: white;
 
         &:hover {
