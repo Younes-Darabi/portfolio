@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Menu } from './shared/menu/menu';
 import { SocialMedia } from './shared/social-media/social-media';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +12,4 @@ import { SocialMedia } from './shared/social-media/social-media';
 })
 
 export class App {
-
 }

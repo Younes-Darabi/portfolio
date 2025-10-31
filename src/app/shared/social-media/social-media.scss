@@ -1,9 +1,10 @@
-section {
+:host {
     display: flex;
     width: 100vw;
     justify-content: right;
     align-items: end;
     height: 90px;
+    max-width: 1920px;
 
     .social_media {
         display: flex;

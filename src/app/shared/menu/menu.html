@@ -1,11 +1,13 @@
-<div>
-    <li routerLink="/"><a href="#hero-page"><img src="/assets/img/logo2.svg" alt="Logo"></a></li>
-    <nav>
-        <ul>
-            <li routerLink="/"><a href="#about-page">{{languages.websiteLanguage.menu.whyMe}}</a></li>
-            <li routerLink="/"><a href="#skills-page">{{languages.websiteLanguage.menu.skills}}</a></li>
-            <li routerLink="/"><a href="#works-page">{{languages.websiteLanguage.menu.myWork}}</a></li>
-            <li routerLink="/"><a href="#contact-page">{{languages.websiteLanguage.menu.contact}}</a></li>
-        </ul>
-    </nav>
-</div>
+<li routerLink="/"><a href="#hero-page"><img src="/assets/img/logo2.svg" alt="Logo"></a></li>
+<nav>
+    <ul>
+        <li routerLink="/"><a (click)="setActive('about')" [class.active]="activeSection === 'about'"
+                href="#about-page">{{languages.websiteLanguage.menu.whyMe}}</a></li>
+        <li routerLink="/"><a (click)="setActive('skills')" [class.active]="activeSection === 'skills'"
+                href="#skills-page">{{languages.websiteLanguage.menu.skills}}</a></li>
+        <li routerLink="/"><a (click)="setActive('works')" [class.active]="activeSection === 'works'"
+                href="#works-page">{{languages.websiteLanguage.menu.myWork}}</a></li>
+        <li routerLink="/"><a (click)="setActive('contact')" [class.active]="activeSection === 'contact'"
+                href="#contact-page">{{languages.websiteLanguage.menu.contact}}</a></li>
+    </ul>
+</nav>

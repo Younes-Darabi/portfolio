@@ -97,8 +97,8 @@ export class Languages {
         mehrText:
           "This project helped me strengthen my understanding of object-oriented programming, animation handling, and performance optimization in pure JavaScript.",
         imageUrl: "/assets/img/projects/sharkie.jpg",
-        githubUrl: "https://github.com/Younes-Darabi/Sharkie",
-        liveUrl: "https://younes-darabi.de/assets/projects/Sharkie/index.html"
+        githubUrl: "github.com/Younes-Darabi/Sharkie",
+        liveUrl: "sharkie.younes-darabi.de/index.html"
       },
       {
         projectName: "Project Pokédex",
@@ -111,8 +111,8 @@ export class Languages {
         mehrText:
           "I gained practical experience working with APIs, handling asynchronous data, and creating clean, reusable UI components.",
         imageUrl: "/assets/img/projects/pokemon.jpg",
-        githubUrl: "https://github.com/Younes-Darabi/Pokemon",
-        liveUrl: "https://younes-darabi.de/assets/projects/Pokedex/index.html"
+        githubUrl: "github.com/Younes-Darabi/Pokemon",
+        liveUrl: "pokedex.younes-darabi.de/index.html"
       }],
       ongoingProject: {
         title: "Ongoing Project",

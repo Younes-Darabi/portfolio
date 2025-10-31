@@ -10,4 +10,9 @@ import { RouterModule } from '@angular/router';
 })
 export class Menu {
   languages = inject(Languages);
+
+  activeSection: string = '';
+  setActive(section: string) {
+    this.activeSection = section;
+  }
 }

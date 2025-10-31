@@ -1,6 +1,7 @@
 :host {
     display: flex;
     width: calc(100vw - 210px);
+    max-width: 1920px;
 
     .contact_me {
         display: flex;

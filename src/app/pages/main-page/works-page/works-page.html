@@ -3,14 +3,14 @@
 </div>
 <div class="div_for">
     @for (project of languages.websiteLanguage.myWorks.projects; track $index) {
-    <div class="div_project">
+    <div class="div_project" >
         <div class="div_project_name">
             <h1>{{$index+1}}</h1>
             <p>{{project.projectName}}</p>
         </div>
         <div class="div_project_about">
             <div class="div_info">
-                <div class="circle">
+                <div class="circle" >
                     <img src="assets/img/icons/my-project/ellipse.svg">
                     <h4>{{project.aboutTitle}}</h4>
                 </div>
