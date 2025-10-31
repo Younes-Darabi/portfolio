@@ -1,8 +1,6 @@
-section {
+:host {
     display: flex;
     width: calc(100vw - 210px);
-    height: calc(100vh - 150px);
-    margin-top: 150px;
 
     .contact_me {
         display: flex;
@@ -199,6 +197,11 @@ section {
 
         .arrow {
             margin: 150px 0;
+            transition: all 250ms ease-in-out;
+
+            &:hover {
+                filter: drop-shadow(0 0 20px #b5e93b83);
+            }
         }
     }
 

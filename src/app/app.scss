@@ -14,5 +14,10 @@
             position: fixed;
         }
 
+        .pages {
+            margin-top: 150px;
+            margin-left: 170px;
+            height: calc(100vh - 150px);
+        }
     }
 }

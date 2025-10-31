@@ -1,20 +1,18 @@
-<section>
-    <div class="title_references">
-        <h2>{{languages.websiteLanguage.referencesPage.title}}</h2>
-    </div>
-    <div class="div_references">
-        @for (reference of languages.websiteLanguage.referencesPage.references; track $index) {
-        <div class="div_frame">
-            <p>{{reference.comment}}</p>
-            <div class="linie"></div>
-            <div>
-                <h4>{{reference.name}}</h4>
-                <span>{{reference.projectName}}</span>
-            </div>
+<div class="title_references">
+    <h2>{{languages.websiteLanguage.referencesPage.title}}</h2>
+</div>
+<div class="div_references">
+    @for (reference of languages.websiteLanguage.referencesPage.references; track $index) {
+    <div class="div_frame">
+        <p>{{reference.comment}}</p>
+        <div class="linie"></div>
+        <div>
+            <h4>{{reference.name}}</h4>
+            <span>{{reference.projectName}}</span>
         </div>
-        }
     </div>
-    <div class="arrow">
-        <a href="#contact-page"><img src="/assets/img/right--.svg" alt="right arrow"></a>
-    </div>
-</section>
+    }
+</div>
+<div class="arrow">
+    <a href="#contact-page"><img src="/assets/img/right--.svg" alt="right arrow"></a>
+</div>

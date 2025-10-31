@@ -1,3 +1,9 @@
-div {
+:host {
+    height: 100%;
     display: flex;
+
+    app-skills-page{
+        display: flex;
+        align-items: flex-end;
+    }
 }

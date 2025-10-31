@@ -2,12 +2,10 @@
     color: #b5e93b;
 }
 
-section {
+:host {
     display: flex;
-    width: calc(100vw - 250px);
-    height: calc(100vh - 150px);
-    margin-top: 150px;
-    margin-left: 250px;
+    width: calc(100vw - 220px);
+    margin-left: 50px;
 
     .div_imprint {
         color: white;

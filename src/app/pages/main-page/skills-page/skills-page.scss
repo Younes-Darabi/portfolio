@@ -1,69 +1,73 @@
-section {
-    font-family: 'Quantico';
+:host {
     display: flex;
-    align-items: flex-end;
-    width: calc(100vw - 320px);
-    height: calc(100vh - 150px);
+    width: calc(100vw - 350px);
 
-    .title {
+    .main {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
+        align-items: flex-start;
+        height: 500px;
 
-    .div_skills {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        justify-content: flex-end;
-        gap: 40px;
-
-        div {
+        .title {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
 
-            .single_skill {
+        .div_skills {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            gap: 40px;
+            align-items: flex-start;
+
+
+            div {
                 display: flex;
-                width: 140px;
-                flex-direction: column;
-                align-items: center;
-                padding: 20px 10px;
-                gap: 10px;
-                text-align: center;
+                flex-wrap: wrap;
 
-                img {
-                    height: 60px;
-                    background-color: transparent;
+                .single_skill {
+                    display: flex;
+                    width: 140px;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 20px 10px;
+                    gap: 10px;
+                    text-align: center;
 
-                    &:hover {
-                        filter: drop-shadow(0 0 20px #b5e93b83);
+                    img {
+                        height: 60px;
+                        background-color: transparent;
+
+                        &:hover {
+                            filter: drop-shadow(0 0 20px #b5e93b83);
+                        }
                     }
                 }
-            }
 
-            .skill_text {
-                width: 260px;
-                padding-top: 40px;
-                padding-left: 40px;
+                .skill_text {
+                    width: 260px;
+                    padding-top: 40px;
+                    padding-left: 40px;
+                }
             }
         }
     }
 
     .arrow {
         display: flex;
-        align-items: center;
-        padding: 70px;
-        margin-top: -70px;
+        height: 100%;
+        align-items: flex-start;
+        padding: 0 70px;
 
         img {
             width: 100px;
             cursor: pointer;
+            margin-top: 180px;
+            transition: all 250ms ease-in-out;
+
+            &:hover {
+                filter: drop-shadow(0 0 20px #b5e93b83);
+            }
         }
     }
 }
-
-// @media (max-width: 1490px) {
-//     .div_skills {
-//         flex-direction: row;
-//     }
-// }
