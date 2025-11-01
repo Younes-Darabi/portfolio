@@ -1,4 +1,4 @@
-<li routerLink="/"><a href="#hero-page"><img src="/assets/img/logo2.svg" alt="Logo"></a></li>
+<li routerLink="/"><a (click)="setActive('hero')" href="#hero-page"><img src="/assets/img/logo2.svg" alt="Logo"></a></li>
 <nav>
     <ul>
         <li routerLink="/"><a (click)="setActive('about')" [class.active]="activeSection === 'about'"

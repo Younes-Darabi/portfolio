@@ -20,6 +20,21 @@
             max-width: 500px;
         }
 
+        .placeholder-error {
+            border-color: red;
+            font-size: 14px;
+
+            &::placeholder {
+                color: red;
+            }
+        }
+
+        .placeholder-normal {
+            &::placeholder {
+                color: #777;
+            }
+        }
+
         input,
         textarea {
             font-family: 'Quantico';

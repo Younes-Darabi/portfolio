@@ -38,12 +38,13 @@
                 transition: all 300ms ease-in-out;
                 writing-mode: vertical-lr;
                 transform: rotate(180deg);
+                font-weight: 600;
 
-                a.active{
+
+                a.active {
                     font-size: 30px;
                     color: transparent;
                     -webkit-text-stroke: 1px #4a4a4a;
-                    font-weight: 700;
                 }
 
                 a {

@@ -3,10 +3,11 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Languages } from './../../../services/languages';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-contact-page',
-  imports: [FormsModule,RouterModule],
+  imports: [FormsModule, RouterModule, CommonModule],
   templateUrl: './contact-page.html',
   styleUrl: './contact-page.scss'
 })

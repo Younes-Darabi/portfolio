@@ -4,29 +4,40 @@
 
 <div class="form">
     <form class="contact_form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" minlength="3"
-            placeholder="{{languages.websiteLanguage.contact.form.name}}" required />
 
-        <input #email="ngModel" [(ngModel)]="contactData.email" type="email" name="email"
-            placeholder="{{languages.websiteLanguage.contact.form.email}}" required
-            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
-        <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" minlength="5"
-            placeholder="{{languages.websiteLanguage.contact.form.message}}" required></textarea>
+        <input #name="ngModel" [ngClass]="{
+            'placeholder-error': name.invalid && name.touched,
+            'placeholder-normal': !name.invalid || !name.touched
+        }" [(ngModel)]="contactData.name" type="text" name="name" minlength="3"
+            [placeholder]="name.invalid && name.touched ? languages.websiteLanguage.contact.form.errorName : languages.websiteLanguage.contact.form.name"
+            required />
 
-        <!-- @if (!name.valid && name.touched && !name.disabled) {
-        <span class="error">{{languages.websiteLanguage.contact.form.errorName}}</span>
-        } -->
-        <!-- @if (!email.valid && email.touched && !email.disabled) {
-        <span class="error">{{languages.websiteLanguage.contact.form.errorEmail}}</span>
-        }
-        @if (!message.valid && message.touched && !message.disabled) {
-        <span class="error">{{languages.websiteLanguage.contact.form.errorMessage}}</span>
-        } -->
+        <input #email="ngModel" [ngClass]="{
+            'placeholder-error': email.invalid && email.touched,
+            'placeholder-normal': !email.invalid || !email.touched
+        }" [(ngModel)]="contactData.email" type="email" name="email"
+            [placeholder]="email.invalid && email.touched ? languages.websiteLanguage.contact.form.errorEmail : languages.websiteLanguage.contact.form.email"
+            required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
+
+        <textarea #message="ngModel" [ngClass]="{
+            'placeholder-error': message.invalid && message.touched,
+            'placeholder-normal': !message.invalid || !message.touched
+        }" [(ngModel)]="contactData.message" name="message" minlength="5"
+            [placeholder]="message.invalid && message.touched ? languages.websiteLanguage.contact.form.errorMessage : languages.websiteLanguage.contact.form.message"
+            required></textarea>
 
         <label class="privacy">
-            <input name="privacy" type="checkbox" required [(ngModel)]="contactData.privacyAccepted" />
+            <input #privacy="ngModel" name="privacy" type="checkbox" required
+                [(ngModel)]="contactData.privacyAccepted" />
             <span>{{languages.websiteLanguage.contact.form.privacyText}}</span>
         </label>
+
+        <div [ngStyle]="{'height':'50px'}">
+            @if (privacy.invalid && privacy.touched) {
+            <span [ngStyle]="{'color':'red'}">{{languages.websiteLanguage.contact.form.errorPrivacy}}</span>
+            }
+        </div>
+
         <button type="submit" name="submit"
             [disabled]="!contactData.privacyAccepted || !contactData.name || !contactData.email || !contactData.message || !email.valid  ">{{languages.websiteLanguage.contact.form.sendButton}}</button>
         @if (this.contactData.emailSent == true){
