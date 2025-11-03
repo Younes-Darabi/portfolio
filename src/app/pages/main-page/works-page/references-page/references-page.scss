@@ -113,9 +113,10 @@
             justify-content: center;
             // margin-bottom: 70px;
             // gap: 20px;
-            // flex-wrap: wrap;
+            flex-wrap: unset;
             // height: 80%;
-            // width: 1150px;
+            width: 350px;
+            overflow-x: scroll;
 
             .div_frame {
                 // display: flex;

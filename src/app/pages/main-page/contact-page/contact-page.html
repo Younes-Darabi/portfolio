@@ -38,7 +38,7 @@
         <label class="privacy">
             <input #privacy="ngModel" name="privacy" type="checkbox" required
                 [(ngModel)]="contactData.privacyAccepted" />
-            <span>{{languages.websiteLanguage.contact.form.privacyText}}</span>
+            <span [innerHTML]="languages.websiteLanguage.contact.form.privacyText"></span>
         </label>
 
         <div [ngStyle]="{'height':'50px'}">

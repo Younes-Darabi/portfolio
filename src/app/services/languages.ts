@@ -122,6 +122,8 @@ export class Languages {
     },
     referencesPage: {
       title: "References",
+      titleRes: "Need a teamplayer?",
+      textRes: "Here what my colleagues said about me",
       references: [
         {
           name: 'James Rugman',
@@ -156,7 +158,7 @@ export class Languages {
         name: "Your name",
         email: "Your e-mail",
         message: "Your message",
-        privacyText: "I've read the privacy policy and agree to the processing of my data as outlined.",
+        privacyText: "I've read the <a class='privacy_link' href='/privacy-policy' target='_blank'>privacy policy</a> and agree to the processing of my data as outlined.",
         sendButton: "Send",
         errorName: "Please enter a Name!",
         errorEmail: "Please enter a Email!",
@@ -336,6 +338,8 @@ export class Languages {
     },
     referencesPage: {
       title: "Referenzen",
+      titleRes: "Sie brauchen einen Teamplayer?",
+      textRes: "Hier ist, was meine Kollegen über mich gesagt haben",
       references: [
         {
           name: 'James Rugman',
@@ -370,7 +374,7 @@ export class Languages {
         name: "Ihr Name",
         email: "Ihre E-Mail",
         message: "Ihre Nachricht",
-        privacyText: "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten gemäß den dort beschriebenen Bedingungen zu.",
+        privacyText: "Ich habe die <a class='privacy_link' href='/privacy-policy' target='_blank'>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten gemäß den dort beschriebenen Bedingungen zu.",
         sendButton: "Senden",
         errorName: "Bitte geben Sie Ihren Namen ein!",
         errorEmail: "Bitte geben Sie Ihre E-Mail-Adresse ein!",
