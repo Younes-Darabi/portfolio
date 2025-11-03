@@ -3,11 +3,10 @@ html {
 }
 
 body {
-
   height: 100vh;
-  overflow-y: hidden;
+  // overflow-y: hidden;
   // overflow-x: hidden;
-  
+
   background: linear-gradient(to right, #000000, #2c2b2c, #0b0a0a, #323232, #0b0a0a);
   background-size: 1000%;
   margin: 0;
@@ -17,6 +16,10 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
+
+.display_none {
+  display: none;
 }
 
 h1 {
@@ -87,4 +90,57 @@ p {
   font-weight: 700;
   src: url('/assets/fonts/quantico-v19-latin-700.woff2') format('woff2');
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@media (max-width:500px) {
+  body {
+    height: auto;
+  }
+
+  .display_none_res {
+    display: none;
+  }
+
+  h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #b5e93b;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  h2 {
+    writing-mode: unset;
+    transform: unset;
+    font-size: 32px;
+    color: transparent;
+    -webkit-text-stroke: 1px #b5e93b;
+    font-weight: 700;
+    margin: 0;
+    margin-right: 0px;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #b5e93b;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 22px;
+    color: white;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    font-size: 16px;
+    color: white;
+    margin: 0;
+  }
 }

@@ -97,8 +97,8 @@ export class Languages {
         mehrText:
           "This project helped me strengthen my understanding of object-oriented programming, animation handling, and performance optimization in pure JavaScript.",
         imageUrl: "/assets/img/projects/sharkie.jpg",
-        githubUrl: "github.com/Younes-Darabi/Sharkie",
-        liveUrl: "sharkie.younes-darabi.de/index.html"
+        githubUrl: "https://github.com/Younes-Darabi/Sharkie",
+        liveUrl: "https://sharkie.younes-darabi.de/index.html"
       },
       {
         projectName: "Project Pokédex",
@@ -111,8 +111,8 @@ export class Languages {
         mehrText:
           "I gained practical experience working with APIs, handling asynchronous data, and creating clean, reusable UI components.",
         imageUrl: "/assets/img/projects/pokemon.jpg",
-        githubUrl: "github.com/Younes-Darabi/Pokemon",
-        liveUrl: "pokedex.younes-darabi.de/index.html"
+        githubUrl: "https://github.com/Younes-Darabi/Pokemon",
+        liveUrl: "https://pokedex.younes-darabi.de/index.html"
       }],
       ongoingProject: {
         title: "Ongoing Project",
@@ -311,8 +311,8 @@ export class Languages {
         mehrText:
           "In diesem Projekt konnte ich mein Verständnis für objektorientierte Programmierung, Animationssteuerung und Performance-Optimierung in reinem JavaScript vertiefen.",
         imageUrl: "/assets/img/projects/sharkie.jpg",
-        githubUrl: "#",
-        liveUrl: "#"
+        githubUrl: "https://github.com/Younes-Darabi/Sharkie",
+        liveUrl: "https://sharkie.younes-darabi.de/index.html"
       },
       {
         projectName: "Projekt Pokédex",
@@ -325,8 +325,8 @@ export class Languages {
         mehrText:
           "Ich habe praktische Erfahrung im Umgang mit APIs, der asynchronen Datenverarbeitung und der Erstellung sauberer, wiederverwendbarer UI-Komponenten gesammelt.",
         imageUrl: "/assets/img/projects/pokemon.jpg",
-        githubUrl: "#",
-        liveUrl: "#"
+        githubUrl: "https://github.com/Younes-Darabi/Pokemon",
+        liveUrl: "https://pokedex.younes-darabi.de/index.html"
       }],
       ongoingProject: {
         title: "Laufendes Projekt",

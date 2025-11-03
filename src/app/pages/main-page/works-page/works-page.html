@@ -1,16 +1,17 @@
 <div class="why_me">
     <h2>{{languages.websiteLanguage.menu.myWork}}</h2>
 </div>
+
 <div class="div_for">
     @for (project of languages.websiteLanguage.myWorks.projects; track $index) {
-    <div class="div_project" >
+    <div class="div_project">
         <div class="div_project_name">
             <h1>{{$index+1}}</h1>
             <p>{{project.projectName}}</p>
         </div>
         <div class="div_project_about">
             <div class="div_info">
-                <div class="circle" >
+                <div class="circle">
                     <img src="assets/img/icons/my-project/ellipse.svg">
                     <h4>{{project.aboutTitle}}</h4>
                 </div>
@@ -20,6 +21,15 @@
                     <h4>{{project.technologiesTitle}}</h4>
                 </div>
                 <p>{{project.technologies}}</p>
+
+                <div class="div_info2res display_none">
+                    <div class="circle">
+                        <img src="assets/img/icons/my-project/ellipse.svg">
+                        <h4>{{project.mehrTitle}}</h4>
+                    </div>
+                    <p class="p_class display_none">{{project.mehrText}}</p>
+                </div>
+
             </div>
             <div class="div_img_btn">
                 <img src="{{project.imageUrl}}" alt="">
@@ -29,13 +39,15 @@
                 </div>
             </div>
         </div>
-        <div class="div_info2">
+
+        <div class="div_info2 display_none_res">
             <div class="circle">
                 <img src="assets/img/icons/my-project/ellipse.svg">
                 <h4>{{project.mehrTitle}}</h4>
             </div>
             <p>{{project.mehrText}}</p>
         </div>
+
     </div>
     }
     <div>
@@ -53,4 +65,4 @@
 <div class="arrow">
     <a href="#references"><img src="/assets/img/right--.svg" alt="right arrow"></a>
 </div>
-<app-references-page id="references" />
+<!-- <app-references-page id="references" /> -->

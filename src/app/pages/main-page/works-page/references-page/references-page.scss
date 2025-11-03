@@ -7,6 +7,10 @@
         margin-bottom: 70px;
     }
 
+    .teamplayer {
+        display: none;
+    }
+
     .div_references {
         display: flex;
         flex-direction: column;
@@ -80,6 +84,92 @@
             &:hover {
                 filter: drop-shadow(0 0 20px #b5e93b83);
             }
+        }
+    }
+}
+
+@media (max-width:500px) {
+    :host {
+        // display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 80px;
+
+        .title_references {
+            display: none;
+        }
+
+        .teamplayer {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+            width: 90%;
+        }
+
+        .div_references {
+            // display: flex;
+            flex-direction: row;
+            justify-content: center;
+            // margin-bottom: 70px;
+            // gap: 20px;
+            // flex-wrap: wrap;
+            // height: 80%;
+            // width: 1150px;
+
+            .div_frame {
+                // display: flex;
+                // justify-content: space-evenly;
+                // align-items: center;
+                width: 344px;
+                height: 176px;
+                // border-radius: 30px;
+                // border: 1px solid #d3ed97;
+
+                p {
+                    font-size: 14px;
+                    width: 174px;
+                    height: 116px;
+                    padding: 15px;
+                    // margin: 0;
+                    text-align: left;
+                }
+
+                .linie {
+                    // display: flex;
+                    // width: 1px;
+                    height: 128px;
+                    // background-color: #d3ed97;
+                    // padding: 0;
+                }
+
+                div {
+                    // display: flex;
+                    // flex-direction: column;
+                    // justify-content: center;
+                    // align-items: center;
+                    width: 120px;
+                    padding: 0px 10px;
+
+                    h4 {
+                        font-size: 20px;
+                        text-align: center;
+                        // color: #b5e93b;
+                        // padding: 52px 23px;
+                        // margin: 0;
+                    }
+
+                    // span {
+                    //     font-size: 14px;
+                    //     color: #d3ed97;
+                    //     margin: 0;
+                    // }
+                }
+            }
+        }
+
+        .arrow {
+            display: none;
         }
     }
 }

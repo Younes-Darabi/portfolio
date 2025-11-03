@@ -2,8 +2,17 @@
     height: 100%;
     display: flex;
 
-    app-skills-page{
+    app-skills-page {
         display: flex;
         align-items: flex-end;
+    }
+}
+
+@media (max-width:500px) {
+    :host {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }

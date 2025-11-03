@@ -2,6 +2,15 @@
     <h2>{{languages.websiteLanguage.contact.title}}</h2>
 </div>
 
+<div class="contact_info_res">
+    <span>{{languages.websiteLanguage.contact.invitationTitle}}</span>
+    <p>{{languages.websiteLanguage.contact.invitationText}}</p>
+    <a href="mailto:info@younes-darabi.de"
+        class="email"><img>{{languages.websiteLanguage.contact.contactInfo.email}}</a>
+    <a href="tel:+4917687853794" class="phone"><img
+            src="/assets/img/icons/contact/phone.svg">{{languages.websiteLanguage.contact.contactInfo.tel}}</a>
+</div>
+
 <div class="form">
     <form class="contact_form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
@@ -48,7 +57,7 @@
 
 <div class="div_info">
 
-    <div>
+    <div class="contact_info">
         <span>{{languages.websiteLanguage.contact.invitationTitle}}</span>
         <p>{{languages.websiteLanguage.contact.invitationText}}</p>
         <a href="mailto:info@younes-darabi.de"
@@ -56,7 +65,7 @@
         <a href="tel:+4917687853794" class="phone"><img
                 src="/assets/img/icons/contact/phone.svg">{{languages.websiteLanguage.contact.contactInfo.tel}}</a>
     </div>
-    <div>
+    <div class="div_arrow">
         <a href="#hero-page"><img class="arrow" src="/assets/img/left--.svg" alt="right arrow"></a>
     </div>
     <div>
@@ -64,7 +73,7 @@
             class="legal_notice">{{languages.websiteLanguage.contact.links.legalNotice}}</a><br>
         <a routerLink="/privacy-policy"
             class="privacy_policy">{{languages.websiteLanguage.contact.links.privacyPolicy}}</a><br>
-        <p>{{languages.websiteLanguage.contact.footer}}</p><br>
+        <p class="design">{{languages.websiteLanguage.contact.footer}}</p><br>
     </div>
 
 </div>

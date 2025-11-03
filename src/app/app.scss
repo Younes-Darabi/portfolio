@@ -10,6 +10,7 @@
         display: flex;
         flex-direction: column;
 
+
         app-social-media {
             position: fixed;
         }
@@ -19,5 +20,45 @@
             margin-left: 170px;
             height: calc(100vh - 150px);
         }
+
+        app-footer-res {
+            display: none;
+        }
     }
+}
+
+@media (max-width:500px) {
+
+    :host {
+        // display: flex;
+        justify-content: center;
+
+        // app-menu {
+        //     position: fixed;
+        //     z-index: 1;
+        // }
+
+        div {
+            //     display: flex;
+            //     flex-direction: column;
+
+
+            //     app-social-media {
+            //         position: fixed;
+            //     }
+
+            .pages {
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+                margin-left: 0px;
+                height: auto;
+            }
+
+            app-footer-res {
+                display: flex;
+            }
+        }
+    }
+
 }

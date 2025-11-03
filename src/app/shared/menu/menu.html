@@ -1,13 +1,25 @@
-<li routerLink="/"><a (click)="setActive('hero')" href="#hero-page"><img src="/assets/img/logo2.svg" alt="Logo"></a></li>
-<nav>
-    <ul>
-        <li routerLink="/"><a (click)="setActive('about')" [class.active]="activeSection === 'about'"
-                href="#about-page">{{languages.websiteLanguage.menu.whyMe}}</a></li>
-        <li routerLink="/"><a (click)="setActive('skills')" [class.active]="activeSection === 'skills'"
-                href="#skills-page">{{languages.websiteLanguage.menu.skills}}</a></li>
-        <li routerLink="/"><a (click)="setActive('works')" [class.active]="activeSection === 'works'"
-                href="#works-page">{{languages.websiteLanguage.menu.myWork}}</a></li>
-        <li routerLink="/"><a (click)="setActive('contact')" [class.active]="activeSection === 'contact'"
-                href="#contact-page">{{languages.websiteLanguage.menu.contact}}</a></li>
-    </ul>
+<li routerLink="/"><a (click)="setActive('hero')" href="#hero-page"><img class="logo" src="/assets/img/logo2.svg"
+                        alt="Logo"></a></li>
+<img (click)="navMenu = true" class="burger_menu display_none" src="/assets/img/burger-menu.svg" alt="burger menu">
+
+<nav [ngClass]="{'display_noneM' : !navMenu}">
+        <div class="close_menu display_none">
+                <img (click)="navMenu = false" src="/assets/img/burger-menuX.svg" alt="burger menu close">
+        </div>
+        <ul>
+                <li routerLink="/"><a (click)="setActive('about')" [class.active]="activeSection === 'about'"
+                                href="#about-page">{{languages.websiteLanguage.menu.whyMe}}</a></li>
+                <li routerLink="/"><a (click)="setActive('skills')" [class.active]="activeSection === 'skills'"
+                                href="#skills-page">{{languages.websiteLanguage.menu.skills}}</a></li>
+                <li routerLink="/"><a (click)="setActive('works')" [class.active]="activeSection === 'works'"
+                                href="#works-page">{{languages.websiteLanguage.menu.myWork}}</a></li>
+                <li routerLink="/"><a (click)="setActive('contact')" [class.active]="activeSection === 'contact'"
+                                href="#contact-page">{{languages.websiteLanguage.menu.contact}}</a></li>
+                <div class="language display_none">
+                        <p (click)="languages.setLanguage('de')">DE</p>
+                        <div></div>
+                        <p (click)="languages.setLanguage('en')">EN</p>
+                </div>
+        </ul>
+
 </nav>

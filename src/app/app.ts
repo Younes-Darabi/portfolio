@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Menu } from './shared/menu/menu';
+import { FooterRes } from './shared/footer-res/footer-res';
 import { SocialMedia } from './shared/social-media/social-media';
-import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Menu, SocialMedia],
+  standalone: true,
+  imports: [RouterOutlet, Menu, SocialMedia, FooterRes],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrls: ['./app.scss']
 })
-
-export class App {
-}
+export class App { }
