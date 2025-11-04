@@ -2,6 +2,7 @@
     display: flex;
     width: calc(100vw - 350px);
     max-width: 1920px;
+    min-width: 1000px;
 
     .title_why_me {
         display: flex;
@@ -141,10 +142,11 @@
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:800px) {
     :host {
         flex-direction: column;
         width: 90%;
+        min-width: unset;
 
         .arrow {
             display: none;

@@ -4,10 +4,10 @@ html {
 
 body {
   height: 100vh;
-  // overflow-y: hidden;
-  // overflow-x: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
   background: linear-gradient(to right, #000000, #2c2b2c, #0b0a0a, #323232, #0b0a0a);
-  background-size: 1000%;
+  background-size: 1100%;
   margin: 0;
   font-family: 'Quantico';
   cursor: default;
@@ -101,7 +101,7 @@ p {
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-@media (max-width:500px) {
+@media (max-width:800px) {
   body {
     height: auto;
   }

@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './menu.scss'
 })
 export class Menu {
-  navMenu = true;
+  navMenu = false;
   languages = inject(Languages);
 
   showMenu(value: boolean) {

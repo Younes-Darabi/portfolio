@@ -124,6 +124,14 @@
                 margin-left: 33px;
             }
         }
+
+        .show_more {
+            display: none;
+        }
+    }
+
+    .show_less {
+        display: none;
     }
 
     .div_Ongoing_project {
@@ -191,7 +199,7 @@
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:800px) {
     :host {
         flex-direction: column;
         align-items: center;
@@ -238,7 +246,7 @@
                 .div_info {
                     margin: 0;
 
-                    .div_info2res{
+                    .div_info2res {
                         display: flex;
                         flex-direction: column;
                     }
@@ -302,6 +310,40 @@
 
                 p {
                     margin-left: 33px;
+                }
+            }
+
+            .show_more {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                margin: 15px 0;
+                gap: 10px;
+                cursor: pointer;
+
+                p {
+                    color: #b5e93b;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .show_less {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: -20px;
+            gap: 10px;
+            cursor: pointer;
+
+            p {
+                color: #b5e93b;
+
+                &:hover {
+                    text-decoration: underline;
                 }
             }
         }

@@ -114,6 +114,8 @@ export class Languages {
         githubUrl: "https://github.com/Younes-Darabi/Pokemon",
         liveUrl: "https://pokedex.younes-darabi.de/index.html"
       }],
+      more: "Show me more",
+      less: "Show me less",
       ongoingProject: {
         title: "Ongoing Project",
         description: "I am currently working on a new project that focuses on improving user experience through clean design and efficient performance. I use modern front-end technologies to build scalable and maintainable web applications. For me, good planning and precise execution are the key to achieving high-quality results.",
@@ -330,6 +332,8 @@ export class Languages {
         githubUrl: "https://github.com/Younes-Darabi/Pokemon",
         liveUrl: "https://pokedex.younes-darabi.de/index.html"
       }],
+      more: "Mehr anzeigen",
+      less: "Weniger anzeigen",
       ongoingProject: {
         title: "Laufendes Projekt",
         description: "Derzeit arbeite ich an einem neuen Projekt, das den Fokus auf Benutzerfreundlichkeit, klares Design und effiziente Performance legt. Ich nutze moderne Frontend-Technologien, um skalierbare und wartbare Webanwendungen zu entwickeln. Für mich sind gute Planung und präzise Umsetzung entscheidend, um hochwertige Ergebnisse zu erzielen.",
