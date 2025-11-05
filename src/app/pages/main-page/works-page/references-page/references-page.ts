@@ -10,4 +10,15 @@ import { CommonModule } from '@angular/common';
 })
 export class ReferencesPage {
   languages = inject(Languages);
+
+  currentSlide = 0;
+
+  nextSlide() {
+    const total = this.languages.websiteLanguage.referencesPage.references.length;
+    this.currentSlide = (this.currentSlide + 1) % total;
+  }
+
+  goToSlide(index: number) {
+    this.currentSlide = index;
+  }
 }

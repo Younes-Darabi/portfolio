@@ -12,26 +12,50 @@ import { SocialMedia } from './shared/social-media/social-media';
   styleUrls: ['./app.scss']
 })
 export class App implements AfterViewInit {
-
   @ViewChild('dragScroll') dragScroll!: ElementRef<HTMLDivElement>;
 
   ngAfterViewInit() {
     const el = this.dragScroll.nativeElement;
 
     let isDown = false;
-    let startX = 0, startY = 0;
-    let scrollLeftStart = 0, scrollTopStart = 0;
-    let isDragging = false;
+    let startX = 0;
+    let startY = 0;
+    let scrollLeftStart = 0;
+    let scrollTopStart = 0;
+
+    let velocityX = 0;
+    let velocityY = 0;
+    let lastX = 0;
+    let lastY = 0;
+    let momentumID: number | null = null;
+
+    const stopMomentum = () => {
+      if (momentumID) cancelAnimationFrame(momentumID);
+      momentumID = null;
+    };
+
+    const momentumScroll = () => {
+      el.scrollLeft -= velocityX;
+      el.scrollTop -= velocityY;
+
+      velocityX *= 0.95;
+      velocityY *= 0.95;
+
+      if (Math.abs(velocityX) > 0.2 || Math.abs(velocityY) > 0.2) {
+        momentumID = requestAnimationFrame(momentumScroll);
+      }
+    };
 
     el.addEventListener('pointerdown', (e) => {
       isDown = true;
-      isDragging = false;
-      el.setPointerCapture(e.pointerId);
       startX = e.clientX;
       startY = e.clientY;
       scrollLeftStart = el.scrollLeft;
       scrollTopStart = el.scrollTop;
-    }, { passive: false });
+      lastX = startX;
+      lastY = startY;
+      stopMomentum();
+    });
 
     el.addEventListener('pointermove', (e) => {
       if (!isDown) return;
@@ -39,24 +63,26 @@ export class App implements AfterViewInit {
       const dx = e.clientX - startX;
       const dy = e.clientY - startY;
 
-      // اگر فاصله بیشتر از چند پیکسل باشد، آن را drag در نظر می‌گیریم
-      if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
-        isDragging = true;
-        el.scrollLeft = scrollLeftStart - dx;
-        el.scrollTop = scrollTopStart - dy;
-      }
-    }, { passive: false });
+      el.scrollLeft = scrollLeftStart - dx;
+      el.scrollTop = scrollTopStart - dy;
 
-    el.addEventListener('pointerup', (e) => {
-      if (!isDragging) {
-        // اینجا اجازه می‌دهیم click روی لینک‌ها انجام شود
-        const target = e.target as HTMLElement;
-        target?.click?.();
-      }
+      velocityX = e.clientX - lastX;
+      velocityY = e.clientY - lastY;
 
-      isDown = false;
-      isDragging = false;
+      lastX = e.clientX;
+      lastY = e.clientY;
     });
 
+    el.addEventListener('pointerup', () => {
+      isDown = false;
+      momentumScroll();
+    });
+
+    el.addEventListener('pointerleave', () => {
+      if (isDown) {
+        isDown = false;
+        momentumScroll();
+      }
+    });
   }
 }

@@ -102,8 +102,12 @@ p {
 }
 
 @media (max-width:800px) {
+
+
   body {
     height: auto;
+    overflow-y: unset;
+    overflow-x: unset;
   }
 
   .display_none_res {

@@ -1,6 +1,6 @@
 :host {
     display: flex;
-    width: calc(100vw - 170px);
+    min-width: calc(100vw - 170px);
     max-width: 1920px;
 
     .title {

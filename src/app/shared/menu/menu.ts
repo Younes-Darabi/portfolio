@@ -12,12 +12,12 @@ import { CommonModule } from '@angular/common';
 export class Menu {
   navMenu = false;
   languages = inject(Languages);
+  activeSection: string = '';
 
   showMenu(value: boolean) {
     this.navMenu = value;
   }
 
-  activeSection: string = '';
   setActive(section: string) {
     this.activeSection = section;
   }
