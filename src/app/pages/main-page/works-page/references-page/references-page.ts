@@ -21,4 +21,11 @@ export class ReferencesPage {
   goToSlide(index: number) {
     this.currentSlide = index;
   }
+
+    scrollTo(id: string) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

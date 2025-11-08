@@ -33,4 +33,11 @@ export class WorksPage implements OnInit {
   toggleShowMore(index: number) {
     this.showMore[index] = !this.showMore[index];
   }
+
+    scrollTo(id: string) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

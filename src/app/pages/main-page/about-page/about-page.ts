@@ -10,4 +10,11 @@ import { RouterModule } from '@angular/router';
 })
 export class AboutPage {
   languages = inject(Languages);
+
+    scrollTo(id: string) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

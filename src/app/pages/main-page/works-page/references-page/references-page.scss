@@ -1,9 +1,12 @@
 :host {
     display: flex;
+    min-width: calc(100vw - 350px);
     align-items: end;
 
     .title_references {
         display: flex;
+        justify-content: left;
+        flex: 1;
         margin-bottom: 70px;
     }
 
@@ -13,12 +16,12 @@
 
     .div_references {
         display: flex;
-        flex-direction: column;
-        justify-content: end;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
         margin-bottom: 70px;
         gap: 20px;
-        flex-wrap: wrap;
-        height: 80%;
         width: 1150px;
 
         .div_frame {

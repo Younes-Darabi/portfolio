@@ -21,4 +21,11 @@ export class Menu {
   setActive(section: string) {
     this.activeSection = section;
   }
+
+  scrollTo(id: string) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

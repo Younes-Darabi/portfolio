@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { HeroPage } from './hero-page/hero-page';
 import { AboutPage } from './about-page/about-page';
 import { SkillsPage } from "./skills-page/skills-page";
@@ -14,5 +14,13 @@ import { RouterModule } from '@angular/router';
 })
 
 export class MainPage {
+  @HostListener('window:wheel', ['$event'])
+  onWheel(event: WheelEvent) {
+    event.preventDefault();
+    window.scrollBy({
+      left: event.deltaY,
+      behavior: 'smooth'
+    });
+  }
 
 }

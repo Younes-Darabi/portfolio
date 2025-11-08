@@ -70,11 +70,11 @@
             </div>
             <p>{{languages.websiteLanguage.myWorks.ongoingProject.description}}</p>
             <div class="div_talk"><a
-                    href="#contact-page">{{languages.websiteLanguage.myWorks.ongoingProject.talkTitle}}</a></div>
+                     (click)="scrollTo('contact-page')">{{languages.websiteLanguage.myWorks.ongoingProject.talkTitle}}</a></div>
         </div>
     </div>
 </div>
 <div class="arrow">
-    <a href="#references"><img src="/assets/img/right--.svg" alt="right arrow"></a>
+    <a (click)="scrollTo('references')"><img src="/assets/img/right--.svg" alt="right arrow"></a>
 </div>
 <app-references-page id="references" />

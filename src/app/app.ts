@@ -15,6 +15,7 @@ export class App implements AfterViewInit {
   @ViewChild('dragScroll') dragScroll!: ElementRef<HTMLDivElement>;
 
   ngAfterViewInit() {
+
     const el = this.dragScroll.nativeElement;
 
     let isDown = false;
@@ -85,4 +86,7 @@ export class App implements AfterViewInit {
       }
     });
   }
+
+
+
 }

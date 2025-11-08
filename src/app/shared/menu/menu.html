@@ -1,25 +1,25 @@
-<li routerLink="/"><a (click)="setActive('hero')" href="#hero-page"><img class="logo" src="/assets/img/logo2.svg"
+<li routerLink="/"><a (click)="setActive('hero')" (click)="scrollTo('hero-page')"><img class="logo" src="/assets/img/logo2.svg"
                         alt="Logo"></a></li>
 <img (click)="showMenu(true)" class="burger_menu display_none" src="/assets/img/burger-menu.svg" alt="burger menu">
 <nav class="menu">
         <ul>
                 <li>
-                        <a [routerLink]="['/']" fragment="about-page" (click)="setActive('about'); navMenu = false"
+                        <a routerLink="/" (click)="scrollTo('about-page')" (click)="setActive('about'); navMenu = false"
                                 [class.active]="activeSection === 'about'">{{languages.websiteLanguage.menu.whyMe}}
                         </a>
                 </li>
                 <li>
-                        <a [routerLink]="['/']" fragment="skills-page" (click)="setActive('skills') ; navMenu = false"
+                        <a routerLink="/" (click)="scrollTo('skills-page')" (click)="setActive('skills') ; navMenu = false"
                                 [class.active]="activeSection === 'skills'">{{languages.websiteLanguage.menu.skills}}
                         </a>
                 </li>
                 <li>
-                        <a [routerLink]="['/']" fragment="works-page" (click)="setActive('works') ; navMenu = false"
+                        <a routerLink="/" (click)="scrollTo('works-page')" (click)="setActive('works') ; navMenu = false"
                                 [class.active]="activeSection === 'works'">{{languages.websiteLanguage.menu.myWork}}
                         </a>
                 </li>
                 <li>
-                        <a [routerLink]="['/']" fragment="contact-page" (click)="setActive('contact') ; navMenu = false"
+                        <a routerLink="/" (click)="scrollTo('contact-page')" (click)="setActive('contact') ; navMenu = false"
                                 [class.active]="activeSection === 'contact'">{{languages.websiteLanguage.menu.contact}}
                         </a>
                 </li>
@@ -31,18 +31,26 @@
                 <img (click)="showMenu(false)" src="/assets/img/burger-menuX.svg" alt="burger menu close">
         </div>
         <ul>
-                <li routerLink="/"><a (click)="setActive('about') ; navMenu = false"
-                                [class.active]="activeSection === 'about'"
-                                href="about-page">{{languages.websiteLanguage.menu.whyMe}}</a></li>
-                <li routerLink="/"><a (click)="setActive('skills') ; navMenu = false"
-                                [class.active]="activeSection === 'skills'"
-                                href="#skills-page">{{languages.websiteLanguage.menu.skills}}</a></li>
-                <li routerLink="/"><a (click)="setActive('works') ; navMenu = false"
-                                [class.active]="activeSection === 'works'"
-                                href="#works-page">{{languages.websiteLanguage.menu.myWork}}</a></li>
-                <li routerLink="/"><a (click)="setActive('contact') ; navMenu = false"
-                                [class.active]="activeSection === 'contact'"
-                                href="#contact-page">{{languages.websiteLanguage.menu.contact}}</a></li>
+                <li>
+                        <a routerLink="/" (click)="scrollTo('about-page')" (click)="setActive('about'); navMenu = false"
+                                [class.active]="activeSection === 'about'">{{languages.websiteLanguage.menu.whyMe}}
+                        </a>
+                </li>
+                <li>
+                        <a routerLink="/" (click)="scrollTo('skills-page')"  (click)="setActive('skills') ; navMenu = false"
+                                [class.active]="activeSection === 'skills'">{{languages.websiteLanguage.menu.skills}}
+                        </a>
+                </li>
+                <li>
+                        <a routerLink="/" (click)="scrollTo('works-page')" (click)="setActive('works') ; navMenu = false"
+                                [class.active]="activeSection === 'works'">{{languages.websiteLanguage.menu.myWork}}
+                        </a>
+                </li>
+                <li>
+                        <a routerLink="/" (click)="scrollTo('contact-page')" (click)="setActive('contact') ; navMenu = false"
+                                [class.active]="activeSection === 'contact'">{{languages.websiteLanguage.menu.contact}}
+                        </a>
+                </li>
                 <div class="language">
                         <p (click)="languages.setLanguage('de') ; navMenu = false">DE</p>
                         <div></div>

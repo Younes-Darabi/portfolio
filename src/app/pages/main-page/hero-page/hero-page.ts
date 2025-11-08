@@ -1,5 +1,5 @@
-import { Component,inject} from '@angular/core';
-import { Languages} from './../../../services/languages';
+import { Component, inject } from '@angular/core';
+import { Languages } from './../../../services/languages';
 
 @Component({
   selector: 'app-hero-page',
@@ -9,4 +9,11 @@ import { Languages} from './../../../services/languages';
 })
 export class HeroPage {
   languages = inject(Languages);
+
+  scrollTo(id: string) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
