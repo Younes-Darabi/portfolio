@@ -1,0 +1,194 @@
+:host {
+    display: flex;
+    height: 100%;
+    padding-bottom: 50px;
+
+    section {
+        display: flex;
+        align-items: flex-end;
+        min-width: calc(100vw - 250px);
+
+        .title_references {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .teamplayer {
+            display: none;
+        }
+
+        .div_references {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+            width: 1150px;
+
+            .div_frame {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 550px;
+                height: 182px;
+                border-radius: 30px;
+                border: 1px solid #d3ed97;
+
+                p {
+                    font-size: 18px;
+                    width: 253px;
+                    height: 121;
+                    padding: 35px 25px;
+                    margin: 0;
+                    text-align: center;
+                }
+
+                .linie {
+                    display: flex;
+                    width: 1px;
+                    height: 113px;
+                    background-color: #d3ed97;
+                    padding: 0;
+                }
+
+                h4 {
+                    color: #b5e93b;
+                    margin: 0;
+                }
+
+                span {
+                    font-size: 14px;
+                    color: #d3ed97;
+                    margin: 0;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0px 25px;
+                }
+            }
+        }
+
+        .div_btns {
+            display: none;
+        }
+
+        .arrow {
+            display: flex;
+            align-items: flex-start;
+            height: 100%;
+            padding: 0 70px;
+
+            img {
+                padding-top: 250px;
+                width: 80px;
+                cursor: pointer;
+                transition: all 250ms ease-in-out;
+
+                &:hover {
+                    filter: drop-shadow(0 0 20px #b5e93b83);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:800px) {
+    :host {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 80px;
+
+        .title_references {
+            display: none;
+        }
+
+        .teamplayer {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+            width: 90%;
+        }
+
+        .div_references {
+
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: unset;
+            width: 90%;
+            position: relative;
+
+            .div_frame {
+                width: 344px;
+                height: 176px;
+                display: none;
+                flex-shrink: 0;
+                transition: opacity 0.3s ease-in-out;
+
+                &.active {
+                    display: flex;
+                }
+
+                p {
+                    font-size: 14px;
+                    width: 174px;
+                    height: 116px;
+                    padding: 15px;
+                    // margin: 0;
+                    text-align: left;
+                }
+
+                .linie {
+                    height: 128px;
+                }
+
+                div {
+                    width: 120px;
+                    padding: 0px 10px;
+
+                    h4 {
+                        font-size: 20px;
+                        text-align: center;
+
+                    }
+
+                }
+            }
+        }
+
+        .div_btns button.active {
+            background-color: #87c000;
+        }
+
+        .div_btns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+
+            button {
+                width: 18px;
+                height: 10px;
+                border-radius: 6px;
+                background-color: #b5e93b;
+                border: none;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .arrow {
+            display: none;
+        }
+    }
+}

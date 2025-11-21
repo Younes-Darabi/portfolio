@@ -27,9 +27,7 @@
 </nav>
 <nav class="menu_res" [ngClass]="{'display_none_res' : !navMenu }">
 
-        <div class="close_menu">
-                <img (click)="showMenu(false)" src="/assets/img/burger-menuX.svg" alt="burger menu close">
-        </div>
+        <img class="close_menu" (click)="showMenu(false)" src="/assets/img/burger-menuX.svg" alt="burger menu close">
         <ul>
                 <li>
                         <a routerLink="/" (click)="scrollTo('about-page')" (click)="setActive('about'); navMenu = false"
@@ -52,9 +50,9 @@
                         </a>
                 </li>
                 <div class="language">
-                        <p (click)="languages.setLanguage('de') ; navMenu = false">DE</p>
+                        <a (click)="languages.setLanguage('de') ; navMenu = false ;setActiveLanguage('de')" [class.active]="activeLanguage === 'de'">DE</a>
                         <div></div>
-                        <p (click)="languages.setLanguage('en') ; navMenu = false">EN</p>
+                        <a (click)="languages.setLanguage('en') ; navMenu = false ;setActiveLanguage('en')" [class.active]="activeLanguage === 'en'">EN</a>
                 </div>
         </ul>
 </nav>

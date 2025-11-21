@@ -3,16 +3,13 @@
     width: 170px;
     height: 100vh;
     display: flex;
+    z-index: 1;
     flex-direction: column;
     align-items: center;
 
-    li {
-        list-style: none;
-    }
-
-    img {
-        width: 80px;
-        height: 80px;
+    .logo {
+        width: 110px;
+        height: 110px;
         padding-top: 50px;
         transition: all 0.4s ease-in-out;
 
@@ -20,6 +17,10 @@
             scale: 1.02;
             cursor: pointer;
         }
+    }
+
+    li {
+        list-style: none;
     }
 
     .display_none {
@@ -46,6 +47,7 @@
                 text-align: center;
 
                 a.active {
+                    font-weight: 700;
                     font-size: 30px;
                     color: transparent;
                     -webkit-text-stroke: 1px #4a4a4a;
@@ -70,22 +72,21 @@
     }
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
 
     :host {
-
         background-color: #b5e93b;
-        width: 100%;
+        width: 100vw;
         height: 73px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
 
-        img{
+        img {
             cursor: pointer;
         }
-         
+
         .logo {
             width: 45px;
             height: 45px;
@@ -101,8 +102,8 @@
             display: block;
             padding-top: 5px;
             margin-right: 20px;
-            width: 30px;
-            height: 32px;
+            width: 28px;
+            height: 30px;
         }
 
         .menu {
@@ -112,7 +113,7 @@
         .menu_res {
             background: linear-gradient(to top, #70a001, #b5e93b);
             width: 100%;
-            height: 350px;
+            height: 320px;
             display: flex;
             flex-direction: column;
             position: absolute;
@@ -121,16 +122,12 @@
             border-radius: 0 0 30px 30px;
 
             .close_menu {
-                display: flex;
-                width: 100%;
-                justify-content: flex-end;
-
-                img {
-                    width: 30px;
-                    height: 30px;
-                    padding: 20px;
-                    cursor: pointer;
-                }
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                cursor: pointer;
+                width: 25px;
+                height: 25px;
             }
 
             ul {
@@ -141,10 +138,11 @@
                 align-items: center;
                 padding: 0;
                 gap: 0px;
+                margin-top: 60px;
 
                 li {
                     color: #4a4a4a;
-                    font-size: 20px;
+                    font-size: 18px;
                     transition: all 300ms ease-in-out;
                     writing-mode: unset;
                     transform: none;
@@ -152,7 +150,8 @@
                     height: 50px;
 
                     a.active {
-                        font-size: 20px;
+                        font-weight: 700;
+                        font-size: 18px;
                         color: transparent;
                         -webkit-text-stroke: 1px #4a4a4a;
                     }
@@ -176,9 +175,16 @@
                 align-items: center;
                 margin-right: 0px;
 
-                p {
+                a.active {
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: transparent;
+                    -webkit-text-stroke: 1px #4a4a4a;
+                }
+
+                a {
                     color: #4a4a4a;
-                    font-size: 20px;
+                    font-size: 18px;
                     transition: all 300ms ease-in-out;
                     margin: 0;
 

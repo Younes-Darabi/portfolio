@@ -13,6 +13,7 @@ export class Menu {
   navMenu = false;
   languages = inject(Languages);
   activeSection: string = '';
+  activeLanguage: string = 'en';
 
   showMenu(value: boolean) {
     this.navMenu = value;
@@ -20,6 +21,10 @@ export class Menu {
 
   setActive(section: string) {
     this.activeSection = section;
+  }
+
+  setActiveLanguage(language: string) {
+    this.activeLanguage = language;
   }
 
   scrollTo(id: string) {
