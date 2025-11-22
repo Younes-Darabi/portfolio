@@ -3,7 +3,6 @@
         display: flex;
         height: 100%;
         width: calc(100vw - 250px);
-        padding-bottom: 50px;
 
         .main {
             display: flex;
@@ -28,14 +27,14 @@
                     display: flex;
                     flex-wrap: wrap;
                     width: 100%;
-                    flex: 1;
+                    // flex: 1;
 
                     .single_skill {
                         display: flex;
                         width: 140px;
                         flex-direction: column;
                         align-items: center;
-                        padding: 20px 10px;
+                        padding: 10px;
                         gap: 10px;
                         text-align: center;
 
@@ -99,87 +98,95 @@
     }
 }
 
-@media (max-width:1150px) {
+@media (max-width:1180px) {
     :host {
         section {
-            width: 880px;
+            width: 1010px;
         }
     }
 }
 
 @media (max-width:900px) {
     :host {
-        flex-direction: column;
+        display: flex;
+        justify-content: center;
         width: 90%;
-        margin-top: 80px;
-        min-width: unset;
 
-        .main {
-            flex-direction: column;
-            height: auto;
+        section {
+            width: 100%;
 
-            .div_skills {
+            .main {
+                flex-direction: column;
+                height: unset;
 
-                div {
-                    justify-content: center;
-                    gap: 40px;
+                .title {
+                    width: 100%;
+                }
 
-                    .single_skill {
-                        width: 70px;
-                        padding: 0;
-                        gap: 0;
+                .div_skills {
 
-                        img {
-                            height: 60px;
-                            background-color: transparent;
+                    div {
 
-                            &:hover {
-                                filter: drop-shadow(0 0 20px #b5e93b83);
+                        justify-content: flex-start;
+                        gap: 20px;
+
+                        .single_skill {
+                            width: 70px;
+                            padding: 0;
+                            gap: 0;
+
+                            img {
+                                height: 45px;
+                                background-color: transparent;
+
+                                &:hover {
+                                    filter: drop-shadow(0 0 20px #b5e93b83);
+                                }
+                            }
+
+                            p {
+                                display: none;
                             }
                         }
 
-                        p {
-                            display: none;
+                        .skill_text {
+                            width: 100%;
+                            padding-top: 0;
+                            padding-left: 0;
                         }
-                    }
 
-                    .skill_text {
-                        width: 100%;
-                        padding-top: 0;
-                        padding-left: 0;
-                    }
-
-                    .div_talk {
-                        display: flex;
-                        justify-content: center;
-
-
-                        a {
+                        .div_talk {
                             display: flex;
                             justify-content: center;
-                            align-items: center;
-                            font-size: 14px;
-                            width: 106px;
-                            height: 43px;
-                            font-weight: 400;
-                            cursor: pointer;
-                            border-radius: 30px;
-                            text-decoration: none;
-                            background: linear-gradient(#b5e93b, #b5e93b);
-                            color: #252525;
-                            border-style: none;
 
-                            &:hover {
-                                background: linear-gradient(#b5e93b, #547800);
+
+                            a {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 14px;
+                                width: 106px;
+                                height: 43px;
+                                font-weight: 400;
+                                cursor: pointer;
+                                border-radius: 30px;
+                                text-decoration: none;
+                                background: linear-gradient(#b5e93b, #b5e93b);
+                                color: #252525;
+                                border-style: none;
+
+                                &:hover {
+                                    background: linear-gradient(#b5e93b, #547800);
+                                }
                             }
                         }
                     }
                 }
             }
-        }
 
-        .arrow {
-            display: none;
+            .arrow {
+                display: none;
+            }
         }
     }
 }
