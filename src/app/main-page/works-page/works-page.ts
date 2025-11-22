@@ -26,7 +26,7 @@ export class WorksPage implements OnInit {
   }
 
   checkIfMobile() {
-    this.isMobile = window.innerWidth <= 800;
+    this.isMobile = window.innerWidth <= 900;
   }
 
   toggleShowMore(index: number) {

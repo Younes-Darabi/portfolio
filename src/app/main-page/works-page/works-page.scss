@@ -237,130 +237,159 @@
 
 @media (max-width:900px) {
     :host {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin-top: 80px;
+        display: flex;
+        // justify-content: center;
+        width: 90%;
 
-        .why_me {
-            width: 90%;
-            flex-direction: row;
-            align-items: flex-start;
-            margin-bottom: 20px;
-        }
-
-        .div_for {
+        section {
             flex-direction: column;
             align-items: center;
-            width: 80%;
-        }
-
-        .div_project {
             width: 100%;
-            height: auto;
-            padding: 10px 15px;
 
-            .div_img_btn {
-
-                img {
-                    display: flex;
-                }
+            .why_me {
+                width: 100%;
+                flex-direction: row;
+                align-items: flex-start;
+                margin-bottom: 20px;
             }
 
-            .div_project_name {
-
-                p {
-                    font-size: 24px;
-                }
-            }
-
-            .circle {
-                gap: 15px;
-
-                h4 {
-                    font-size: 20px;
-                }
-            }
-
-            .div_project_about {
+            .div_for {
                 flex-direction: column;
+                align-items: center;
+            }
 
-                .div_info {
-                    margin: 0;
-
-                    .div_info2res {
-                        display: flex;
-                        flex-direction: column;
-                    }
-
-                    p {
-                        font-size: 16px;
-                        margin-left: 0px;
-                    }
-                }
+            .div_project {
+                width: 100%;
+                height: auto;
+                padding: 20px 30px;
 
                 .div_img_btn {
-                    margin-top: 30px;
-                    margin-bottom: 20px;
+                    align-items: center;
 
-                    .div_btn {
+                    img {
                         display: flex;
-                        justify-content: space-evenly;
-                        padding-top: 20px;
+                        width: 80%;
+                    }
+                }
 
-                        a {
+                .div_project_name {
+
+                    p {
+                        font-size: 24px;
+                    }
+                }
+
+                .circle {
+                    gap: 15px;
+
+                    h4 {
+                        font-size: 20px;
+                    }
+                }
+
+                .div_project_about {
+                    flex-direction: column;
+
+                    .div_img_btn {
+
+                        img {
                             display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            font-size: 14px;
-                            width: 106px;
-                            height: 43px;
-                            font-weight: 400;
-                            cursor: pointer;
-                            border-radius: 30px;
-                            text-decoration: none;
+                        }
+                    }
+
+                    .div_info {
+                        margin: 0;
+
+                        .div_info2res {
+                            display: flex;
+                            flex-direction: column;
                         }
 
-                        .btn_github {
-                            background-color: #3E4926;
-                            border: 1px solid #b5e93b;
-                            color: #b5e93b;
-                            transition: all 200ms ease-in-out;
+                        p {
+                            font-size: 16px;
+                            margin-left: 0px;
+                        }
+                    }
 
-                            &:hover {
-                                background-color: #5e6e3b;
-                                color: white;
+                    .div_img_btn {
+                        margin-top: 30px;
+                        margin-bottom: 20px;
+
+                        .div_btn {
+                            display: flex;
+                            justify-content: space-evenly;
+                            padding-top: 20px;
+
+                            a {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 14px;
+                                width: 106px;
+                                height: 43px;
+                                font-weight: 400;
+                                cursor: pointer;
+                                border-radius: 30px;
+                                text-decoration: none;
+                            }
+
+                            .btn_github {
+                                background-color: #3E4926;
+                                border: 1px solid #b5e93b;
+                                color: #b5e93b;
+                                transition: all 200ms ease-in-out;
+
+                                &:hover {
+                                    background-color: #5e6e3b;
+                                    color: white;
+                                }
+                            }
+
+                            .btn_live {
+                                background: linear-gradient(#b5e93b, #b5e93b);
+                                color: #252525;
+                                border-style: none;
+                                transition: all 250ms ease-in-out;
+
+                                &:hover {
+                                    background: linear-gradient(#b5e93b, #547800);
+                                }
                             }
                         }
+                    }
+                }
 
-                        .btn_live {
-                            background: linear-gradient(#b5e93b, #b5e93b);
-                            color: #252525;
-                            border-style: none;
-                            transition: all 250ms ease-in-out;
+                .div_info2 {
+                    margin: 0 40px;
 
-                            &:hover {
-                                background: linear-gradient(#b5e93b, #547800);
-                            }
+                    p {
+                        margin-left: 33px;
+                    }
+                }
+
+                .show_more {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    margin: 15px 0;
+                    gap: 10px;
+                    cursor: pointer;
+
+                    p {
+                        color: #b5e93b;
+
+                        &:hover {
+                            text-decoration: underline;
                         }
                     }
                 }
             }
 
-            .div_info2 {
-                margin: 0 40px;
-
-                p {
-                    margin-left: 33px;
-                }
-            }
-
-            .show_more {
+            .show_less {
                 display: flex;
                 width: 100%;
                 justify-content: center;
-                margin: 15px 0;
+                margin-top: -20px;
                 gap: 10px;
                 cursor: pointer;
 
@@ -372,50 +401,32 @@
                     }
                 }
             }
-        }
 
-        .show_less {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            margin-top: -20px;
-            gap: 10px;
-            cursor: pointer;
+            .div_Ongoing_project {
+                width: 100%;
 
-            p {
-                color: #b5e93b;
+                .div_op_title {
+                    display: flex;
+                    align-items: end;
+                    gap: 15px;
 
-                &:hover {
-                    text-decoration: underline;
+                    h3 {
+                        font-size: 40px;
+                    }
                 }
-            }
-        }
 
-        .div_Ongoing_project {
-            width: 100%;
+                .op_title {
+                    font-size: 24px;
+                }
 
-            .div_op_title {
-                display: flex;
-                align-items: end;
-                gap: 15px;
-
-                h3 {
-                    font-size: 40px;
+                .div_talk {
+                    display: none;
                 }
             }
 
-            .op_title {
-                font-size: 24px;
-            }
-
-            .div_talk {
+            .arrow {
                 display: none;
             }
         }
-
-        .arrow {
-            display: none;
-        }
     }
-
 }
