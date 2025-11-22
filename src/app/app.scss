@@ -3,6 +3,32 @@
     width: 100vw;
     height: 100vh;
 
+    .drag-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .drag-scroll.dragging {
+        cursor: grabbing;
+    }
+
+    .drag-scroll {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        cursor: grab;
+        user-select: none;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .pages {
+        margin-top: 150px;
+        margin-left: 170px;
+        height: calc(100vh - 150px);
+    }
+
     div {
         width: calc(100vw - 170px);
         display: flex;
@@ -11,6 +37,12 @@
         div {
             display: flex;
             flex: 1;
+            margin-top: 130px;
+            margin-left: 170px;
+
+            app-footer-res {
+                display: none;
+            }
         }
     }
 }
@@ -25,6 +57,12 @@
             div {
                 display: flex;
                 height: calc(100vh - 73px);
+                margin-top: 0;
+                margin-left: 0;
+
+                app-footer-res {
+                    display: flex;
+                }
             }
         }
     }

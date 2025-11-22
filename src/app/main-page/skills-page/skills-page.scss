@@ -1,4 +1,6 @@
 :host {
+    padding-bottom: 50px;
+
     section {
         display: flex;
         height: 100%;
@@ -111,6 +113,7 @@
         display: flex;
         justify-content: center;
         width: 90%;
+        padding-bottom: 0;
 
         section {
             width: 100%;

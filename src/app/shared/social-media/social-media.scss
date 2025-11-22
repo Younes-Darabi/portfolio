@@ -1,8 +1,10 @@
 :host {
+    position: fixed;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 130px;
+    width: 100%;
 
     .social_media {
         display: flex;

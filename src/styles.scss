@@ -20,6 +20,10 @@
     src: url('/assets/fonts/quantico-v19-latin-700.woff2') format('woff2');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     list-style: none;
@@ -27,10 +31,18 @@
 }
 
 body {
-    margin: 0;
-    font-family: 'Quantico';
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
     background: linear-gradient(to right, #000000, #2c2b2c, #0b0a0a, #323232, #0b0a0a);
     background-size: 1100%;
+    margin: 0;
+    font-family: 'Quantico';
+    cursor: default;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 
@@ -84,11 +96,11 @@ p {
 @media (max-width:900px) {
 
 
-    // body {
-    //     height: auto;
-    //     overflow-y: unset;
-    //     overflow-x: unset;
-    // }
+    body {
+        height: auto;
+        overflow-y: unset;
+        overflow-x: unset;
+    }
 
     .display_none_res {
         display: none;
