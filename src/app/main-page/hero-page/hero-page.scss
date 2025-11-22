@@ -1,4 +1,5 @@
 :host {
+    position: relative;
 
     section {
         display: flex;
@@ -20,6 +21,7 @@
                 flex-direction: column;
                 align-items: end;
                 padding-bottom: 150px;
+                position: absolute;
             }
 
             h4 {
@@ -49,6 +51,14 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media (max-width:1080px) {
+    :host {
+        section {
+            width: 910px;
         }
     }
 }
@@ -89,73 +99,71 @@
 
 @media (max-width:900px) {
     :host {
-        width: 100vw;
-        height: calc(100vh - 73px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: unset;
 
-        .title {
-            flex-direction: column;
-            flex: none;
-            align-items: center;
-            position: unset;
+        section {
+            height: calc(100vh - 73px);
+            width: 90%;
 
-            .img_profile {
-                position: unset;
-                width: 500px
-            }
-
-            h1 {
-                margin-top: -5px;
-                font-size: 60px;
-            }
-
-            h4 {
-                display: block;
-            }
-
-            h3 {
-                margin-top: 15px;
-                font-size: 35px;
-            }
-
-            .text {
-                flex-direction: column-reverse;
+            .title {
+                flex-direction: column;
                 align-items: center;
-                position: unset;
-                padding-bottom: 0;
-            }
-        }
+                gap: 20px;
 
-        .arrow {
-            display: none;
+                .img_profile {
+                    width: 500px;
+                }
+
+                .text {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    padding-bottom: 0;
+                    position: unset;
+                }
+
+                h1 {
+                    font-size: 60px;
+                }
+
+                h4 {
+                    display: flex;
+                    margin: 0;
+                }
+
+                h3 {
+                    font-size: 30px;
+                }
+            }
+
+            .arrow {
+                display: none;
+            }
         }
     }
 }
 
 @media (max-width:500px) {
     :host {
-        .title {
-            .img_profile {
-                position: unset;
-                width: 310px;
-            }
 
-            h1 {
-                margin-top: -5px;
-                font-size: 40px;
-            }
+        section {
 
-            h4 {
-                margin-top: -5px;
-                display: block;
-                font-size: 18px;
-            }
+            .title {
 
-            h3 {
-                margin-top: 15px;
-                font-size: 25px;
+                .img_profile {
+                    width: 300px;
+                }
+
+                h1 {
+                    font-size: 35px;
+                }
+
+                h4 {
+                    font-size: 18px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
             }
         }
     }

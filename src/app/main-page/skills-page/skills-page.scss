@@ -83,10 +83,26 @@
     }
 }
 
-@media (max-width:1110px) {
+@media (max-width:1240px) {
     :host {
         section {
-            width: 850px;
+            .main {
+                .div_skills {
+                    div {
+                        .skill_text {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1150px) {
+    :host {
+        section {
+            width: 880px;
         }
     }
 }

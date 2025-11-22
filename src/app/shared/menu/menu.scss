@@ -76,8 +76,8 @@
 
     :host {
         background-color: #b5e93b;
-        width: 100vw;
-        height: 73px;
+        width: 100%;
+        min-height: 73px;
         display: flex;
         flex-direction: row;
         align-items: center;
