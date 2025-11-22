@@ -98,97 +98,106 @@
     }
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
     :host {
-        flex-direction: column;
-        align-items: center;
+        // display: flex;
+        // height: 100%;
         width: 100%;
-        margin-top: 80px;
+        padding-bottom: 0;
+        justify-content: center;
 
-        .title_references {
-            display: none;
-        }
-
-        .teamplayer {
-            display: flex;
+        section {
+            // display: flex;
             flex-direction: column;
-            margin-bottom: 40px;
+            // align-items: flex-end;
+            min-width: unset;
             width: 90%;
-        }
 
-        .div_references {
-
-            flex-direction: row;
-            justify-content: center;
-            margin-bottom: 30px;
-            flex-wrap: unset;
-            width: 90%;
-            position: relative;
-
-            .div_frame {
-                width: 344px;
-                height: 176px;
+            .title_references {
                 display: none;
-                flex-shrink: 0;
-                transition: opacity 0.3s ease-in-out;
+            }
 
-                &.active {
-                    display: flex;
-                }
+            .teamplayer {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 40px;
+                width: 100%;
+            }
 
-                p {
-                    font-size: 14px;
-                    width: 174px;
-                    height: 116px;
-                    padding: 15px;
-                    // margin: 0;
-                    text-align: left;
-                }
+            .div_references {
 
-                .linie {
-                    height: 128px;
-                }
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 30px;
+                flex-wrap: unset;
+                width: 90%;
+                position: relative;
 
-                div {
-                    width: 120px;
-                    padding: 0px 10px;
+                .div_frame {
+                    width: 344px;
+                    height: 176px;
+                    display: none;
+                    flex-shrink: 0;
+                    transition: opacity 0.3s ease-in-out;
 
-                    h4 {
-                        font-size: 20px;
-                        text-align: center;
-
+                    &.active {
+                        display: flex;
                     }
 
+                    p {
+                        font-size: 14px;
+                        width: 174px;
+                        height: 116px;
+                        padding: 15px;
+                        // margin: 0;
+                        text-align: left;
+                    }
+
+                    .linie {
+                        height: 128px;
+                    }
+
+                    div {
+                        width: 120px;
+                        padding: 0px 10px;
+
+                        h4 {
+                            font-size: 20px;
+                            text-align: center;
+
+                        }
+
+                    }
                 }
             }
-        }
 
-        .div_btns button.active {
-            background-color: #87c000;
-        }
+            .div_btns button.active {
+                background-color: #87c000;
+            }
 
-        .div_btns {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            width: 100%;
+            .div_btns {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                width: 100%;
 
-            button {
-                width: 18px;
-                height: 10px;
-                border-radius: 6px;
-                background-color: #b5e93b;
-                border: none;
+                button {
+                    width: 18px;
+                    height: 10px;
+                    border-radius: 6px;
+                    background-color: #b5e93b;
+                    border: none;
 
-                &:hover {
-                    cursor: pointer;
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
-        }
 
-        .arrow {
-            display: none;
+            .arrow {
+                display: none;
+            }
         }
     }
 }
