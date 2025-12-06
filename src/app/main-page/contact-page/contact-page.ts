@@ -49,6 +49,9 @@ export class ContactPage {
           complete: () => this.contactData.emailSent = true,
         });
     }
+    setTimeout(() => {
+      this.contactData.emailSent = false;
+    }, 5000);
   }
 
   scrollTo(id: string) {

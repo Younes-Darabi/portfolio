@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { HeroPage } from "./hero-page/hero-page";
 import { AboutPage } from "./about-page/about-page";
 import { SkillsPage } from "./skills-page/skills-page";
@@ -15,4 +15,5 @@ import { ReferencesPage } from "./references-page/references-page";
 })
 
 export class MainPage {
+
 }

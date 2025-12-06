@@ -35,7 +35,7 @@
                     [(ngModel)]="contactData.privacyAccepted" />
                 <span [innerHTML]="languages.websiteLanguage.contact.form.privacyText"></span>
             </label>
-            <div [ngStyle]="{'height':'50px'}">
+            <div [ngStyle]="{'height':'10px'}">
                 @if (privacy.invalid && privacy.touched) {
                 <span [ngStyle]="{'color':'red'}">{{languages.websiteLanguage.contact.form.errorPrivacy}}</span>
                 }

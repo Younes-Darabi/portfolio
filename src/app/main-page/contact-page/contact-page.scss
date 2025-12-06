@@ -1,5 +1,6 @@
 :host {
     display: flex;
+    margin-top: 130px;
 
     section {
         display: flex;
@@ -80,6 +81,7 @@
                 gap: 10px;
                 font-size: 14px;
                 color: #b5e93b;
+                margin-bottom: -20px;
 
                 input[type='checkbox'] {
                     accent-color: #b5e93b;
@@ -246,11 +248,12 @@
     }
 
     .end_green {
-        display: flex;
-        width: 100px;
-        height: 100%;
-        background-color: #b5e93b;
+        display: block;
+        margin-top: -130px;
         margin-left: 30px;
+        min-width: 100px;
+        height: 100vh;
+        background-color: #b5e93b;
     }
 }
 
@@ -265,7 +268,7 @@
 @media (max-width:900px) {
     :host {
         width: 90%;
-
+        margin-top: 0;
 
         section {
             flex-direction: column;

@@ -1,4 +1,6 @@
 :host {
+    margin-top: 130px;
+
     section {
         display: flex;
         height: 100%;
@@ -155,6 +157,7 @@
         display: flex;
         justify-content: center;
         width: 90%;
+        margin-top: 0;
 
         section {
             // display: flex;

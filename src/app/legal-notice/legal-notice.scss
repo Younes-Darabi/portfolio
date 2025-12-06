@@ -3,6 +3,8 @@
 }
 
 :host {
+    margin-top: 130px;
+
     section {
         display: flex;
         width: calc(100vw - 220px);
@@ -67,6 +69,7 @@
 @media (max-width:900px) {
     :host {
         margin-top: 50px;
+
         section {
             flex-direction: column;
             align-items: center;
