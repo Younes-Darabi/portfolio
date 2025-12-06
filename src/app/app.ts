@@ -14,8 +14,10 @@ import { FooterRes } from "./shared/footer-res/footer-res";
 export class App implements AfterViewInit {
   @ViewChild('dragScroll') dragScroll!: ElementRef<HTMLDivElement>;
 
-  ngAfterViewInit() {
+  private smoothVelocity = 0;
+  private isScrolling = false;
 
+  ngAfterViewInit() {
     const el = this.dragScroll.nativeElement;
 
     let isDown = false;
@@ -85,5 +87,32 @@ export class App implements AfterViewInit {
         momentumScroll();
       }
     });
+
+    el.addEventListener('wheel', (event: WheelEvent) => {
+      event.preventDefault();
+
+      this.smoothVelocity += event.deltaY * 0.1;
+
+      if (!this.isScrolling) {
+        this.isScrolling = true;
+        this.startSmoothScroll(el);
+      }
+    }, { passive: false, capture: true });
+  }
+
+  startSmoothScroll(el: HTMLDivElement) {
+    const step = () => {
+      el.scrollLeft += this.smoothVelocity;
+
+      this.smoothVelocity *= 0.9;
+
+      if (Math.abs(this.smoothVelocity) > 0.1) {
+        requestAnimationFrame(step);
+      } else {
+        this.isScrolling = false;
+      }
+    };
+
+    requestAnimationFrame(step);
   }
 }
