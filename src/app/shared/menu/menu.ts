@@ -37,6 +37,8 @@ export class Menu {
   }
 
   scrollToRight(id: string) {
-    this.onScrollRequest.emit(id);
+    setTimeout(() => {
+      this.onScrollRequest.emit(id);
+    }, 50);
   }
 }
