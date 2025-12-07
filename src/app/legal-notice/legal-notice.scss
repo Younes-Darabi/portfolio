@@ -69,6 +69,7 @@
 @media (max-width:900px) {
     :host {
         margin-top: 50px;
+        min-height: calc(100vh - 275px);
 
         section {
             flex-direction: column;

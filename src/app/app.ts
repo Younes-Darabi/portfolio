@@ -115,4 +115,18 @@ export class App implements AfterViewInit {
 
     requestAnimationFrame(step);
   }
+
+  scrollToRight(id: string) {
+  const section = document.getElementById(id);
+  const container = this.dragScroll.nativeElement;
+
+  if (!section) return;
+
+  const offset = section.offsetLeft - 170;
+
+  container.scrollTo({
+    left: offset,
+    behavior: 'smooth'
+  });
+}
 }

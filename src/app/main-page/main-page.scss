@@ -1,6 +1,26 @@
 :host {
     display: flex;
     height: 100%;
+
+    #about-page {
+        scroll-margin-right: 100px;
+    }
+
+    #skills-page {
+        scroll-margin-right: 100px;
+    }
+
+    #works-page {
+        scroll-margin-right: 100px;
+    }
+
+    #references-page {
+        scroll-margin-right: 100px;
+    }
+
+    #contact-page {
+        scroll-margin-right: 100px;
+    }
 }
 
 @media (max-width:900px) {
@@ -9,5 +29,25 @@
         align-items: center;
         overflow-x: unset;
         gap: 100px;
+
+        #hero-page {
+            scroll-margin-top: 100px;
+        }
+
+        #about-page {
+            scroll-margin-top: 100px;
+        }
+
+        #skills-page {
+            scroll-margin-top: 100px;
+        }
+
+        #works-page {
+            scroll-margin-top: 100px;
+        }
+
+        #contact-page {
+            scroll-margin-top: 100px;
+        }
     }
 }

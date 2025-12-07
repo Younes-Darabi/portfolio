@@ -101,10 +101,11 @@
     :host {
         position: unset;
         width: 100%;
+        margin-top: 73px;
 
         section {
             height: calc(100vh - 73px);
-            width: 90%;
+            width: 100%;
 
             .title {
                 flex-direction: column;

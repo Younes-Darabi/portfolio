@@ -4,22 +4,22 @@
 <nav class="menu">
         <ul>
                 <li>
-                        <a routerLink="/" (click)="scrollTo('about-page')" (click)="setActive('about'); navMenu = false"
+                        <a routerLink="/" (click)="scrollToRight('about-page')" (click)="setActive('about'); navMenu = false"
                                 [class.active]="activeSection === 'about'">{{languages.websiteLanguage.menu.whyMe}}
                         </a>
                 </li>
                 <li>
-                        <a routerLink="/" (click)="scrollTo('skills-page')" (click)="setActive('skills') ; navMenu = false"
+                        <a routerLink="/" (click)="scrollToRight('skills-page')" (click)="setActive('skills') ; navMenu = false"
                                 [class.active]="activeSection === 'skills'">{{languages.websiteLanguage.menu.skills}}
                         </a>
                 </li>
                 <li>
-                        <a routerLink="/" (click)="scrollTo('works-page')" (click)="setActive('works') ; navMenu = false"
+                        <a routerLink="/" (click)="scrollToRight('works-page')" (click)="setActive('works') ; navMenu = false"
                                 [class.active]="activeSection === 'works'">{{languages.websiteLanguage.menu.myWork}}
                         </a>
                 </li>
                 <li>
-                        <a routerLink="/" (click)="scrollTo('contact-page')" (click)="setActive('contact') ; navMenu = false"
+                        <a routerLink="/" (click)="scrollToRight('contact-page')" (click)="setActive('contact') ; navMenu = false"
                                 [class.active]="activeSection === 'contact'">{{languages.websiteLanguage.menu.contact}}
                         </a>
                 </li>

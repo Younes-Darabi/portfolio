@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, EventEmitter, inject, Output } from '@angular/core';
 import { Languages } from './../../services/languages';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -14,6 +14,7 @@ export class Menu {
   languages = inject(Languages);
   activeSection: string = '';
   activeLanguage: string = 'en';
+  @Output() onScrollRequest = new EventEmitter<string>();
 
   showMenu(value: boolean) {
     this.navMenu = value;
@@ -33,5 +34,9 @@ export class Menu {
       block: 'start',
       inline: 'nearest'
     });
+  }
+
+  scrollToRight(id: string) {
+    this.onScrollRequest.emit(id);
   }
 }
