@@ -55,14 +55,6 @@
     }
 }
 
-@media (max-width:1080px) {
-    :host {
-        section {
-            width: 910px;
-        }
-    }
-}
-
 @media (max-width:1200px) {
     :host {
         .title {
@@ -92,6 +84,19 @@
                         filter: drop-shadow(0 0 20px #b5e93b83);
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width:1080px) {
+    :host {
+        section {
+            position: relative;
+
+            .arrow {
+                position: absolute;
+                right: 0px;
             }
         }
     }
