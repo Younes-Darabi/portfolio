@@ -13,7 +13,7 @@
             align-items: flex-end;
 
             .img_profile {
-                width: 700px;
+                height: 900px;
             }
 
             .text {
@@ -24,11 +24,16 @@
                 position: absolute;
             }
 
+            h1 {
+                font-size: 85px;
+            }
+
             h4 {
                 display: none;
             }
 
             h3 {
+                font-size: 50px;
                 color: transparent;
                 -webkit-text-stroke: 1px #b5e93b;
             }
@@ -57,31 +62,38 @@
 
 @media (max-width:1200px) {
     :host {
-        .title {
 
-            h1 {
-                font-size: 70px;
+        section {
+            .title {
+
+                h1 {
+                    font-size: 70px;
+                }
+
+                h3 {
+                    font-size: 40px;
+                }
+
+                .img_profile {
+                    height: 800px;
+                }
             }
 
-            h3 {
-                font-size: 40px;
-            }
-        }
+            .arrow {
+                display: flex;
+                align-items: flex-start;
+                margin: 70px;
+                margin-top: 160px;
 
-        .arrow {
-            display: flex;
-            align-items: flex-start;
-            margin: 70px;
-            margin-top: 160px;
+                a {
+                    img {
+                        width: 80px;
+                        cursor: pointer;
+                        transition: all 250ms ease-in-out;
 
-            a {
-                img {
-                    width: 80px;
-                    cursor: pointer;
-                    transition: all 250ms ease-in-out;
-
-                    &:hover {
-                        filter: drop-shadow(0 0 20px #b5e93b83);
+                        &:hover {
+                            filter: drop-shadow(0 0 20px #b5e93b83);
+                        }
                     }
                 }
             }
@@ -118,7 +130,7 @@
                 gap: 20px;
 
                 .img_profile {
-                    width: 500px;
+                    height: 500px;
                 }
 
                 .text {
@@ -157,7 +169,7 @@
             .title {
 
                 .img_profile {
-                    width: 300px;
+                    height: 400px;
                 }
 
                 h1 {
