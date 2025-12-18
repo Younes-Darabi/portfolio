@@ -103,7 +103,34 @@
 @media (max-width:1180px) {
     :host {
         section {
-            width: 1010px;
+
+            .main {
+
+                .div_skills {
+                    gap: 20px;
+
+                    div {
+
+                        .single_skill {
+                            width: 100px;
+                            padding: 10px;
+                            gap: 10px;
+
+                            img {
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1014px) {
+    :host {
+        section {
+            width: 770px;
         }
     }
 }
