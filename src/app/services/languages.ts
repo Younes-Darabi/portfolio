@@ -83,8 +83,8 @@ export class Languages {
         mehrText:
           "I learned how to implement dynamic task handling with Firebase, improve my component structure in Angular, and maintain clean, scalable code across different modules.",
         imageUrl: "/assets/img/projects/join.jpg",
-        githubUrl: "",
-        liveUrl: ""
+        githubUrl: "https://github.com/Younes-Darabi/join-project",
+        liveUrl: "https://join.younes-darabi.de/index.html"
       },
       {
         projectName: "Project Sharkie",
@@ -289,8 +289,8 @@ export class Languages {
         mehrText:
           "Ich habe gelernt, wie man dynamische Aufgabenverwaltung mit Firebase implementiert, die Komponentenstruktur in Angular verbessert und sauberen, skalierbaren Code über verschiedene Module hinweg pflegt.",
         imageUrl: "/assets/img/projects/join.jpg",
-        githubUrl: "",
-        liveUrl: ""
+        githubUrl: "https://github.com/Younes-Darabi/join-project",
+        liveUrl: "https://join.younes-darabi.de/index.html"
       },
       {
         projectName: "Projekt Sharkie",
