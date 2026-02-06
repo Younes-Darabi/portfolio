@@ -8,6 +8,7 @@
   </div>
   <div class="div_references">
     @for (reference of languages.websiteLanguage.referencesPage.references; track $index) {
+
     <div class="div_frame" [class.active]="currentSlide === $index">
       <p>{{reference.comment}}</p>
       <div class="linie"></div>
@@ -16,6 +17,7 @@
         <span>{{reference.projectName}}</span>
       </div>
     </div>
+
     }
   </div>
   <div class="div_btns">

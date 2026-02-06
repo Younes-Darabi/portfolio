@@ -128,30 +128,31 @@ export class Languages {
       textRes: "Here what my colleagues said about me",
       references: [
         {
-          name: 'James Rugman',
+          name: 'Imra Skaliks',
+          projectName: 'Project Sakura',
+          comment: 'Younes played a major role in leading our project to success through his focused, reliable, and precise work approach. With his vast knowledge and friendly nature, he is an asset to any team.',
+        }, {
+          name: 'Anastasia Tsypkaykina',
           projectName: 'Project Join',
-          comment: '‘‘Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.’’',
+          comment: 'Younes was very helpful on our project, and I truly enjoyed working with him. He was always punctual and managed his time and work extremely well. He also communicated clearly and was a reliable team member throughout the project.',
         }, {
-          name: 'Evelyn Marx',
-          projectName: 'Project DA Bubble',
-          comment: '‘’ He is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code. ‘’',
-        }, {
-          name: 'Noah Mueller',
-          projectName: 'Project Sharkie',
-          comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
-        }, {
-          name: 'Noah Mueller',
-          projectName: 'Project Sharkie',
-          comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
-        }, {
-          name: 'Noah Mueller',
-          projectName: 'Project Sharkie',
-          comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
-        }, {
-          name: 'Noah Mueller',
-          projectName: 'Project Sharkie',
-          comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
+          name: 'Kevin Hase',
+          projectName: 'Project Join',
+          comment: 'Younes, your calm demeanor, commitment, and reliable support made our collaboration truly special.',
         }
+        // , {
+        //   name: 'Noah Mueller',
+        //   projectName: 'Project Sharkie',
+        //   comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
+        // }, {
+        //   name: 'Noah Mueller',
+        //   projectName: 'Project Sharkie',
+        //   comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
+        // }, {
+        //   name: 'Noah Mueller',
+        //   projectName: 'Project Sharkie',
+        //   comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
+        // }
       ]
     },
     contact: {
@@ -187,7 +188,7 @@ export class Languages {
       address: "Test Str. 1",
       // address: "Langenhainer Str. 1",        
       city: "28195 Bremen",
-      contact : "contact",
+      contact: "contact",
       phone: "+49 176 87853794",
       email: "info@younes-darabi.de",
     },
@@ -334,30 +335,31 @@ export class Languages {
       textRes: "Hier ist, was meine Kollegen über mich gesagt haben",
       references: [
         {
-          name: 'James Rugman',
+          name: 'Imra Skaliks',
+          projectName: 'Project Sakura',
+          comment: 'Younes hat einen großen Anteil daran gehabt, unser Projekt zum Erfolg zu führen, durch seine fokussierte, verlässliche und präzise Arbeitsweise. Durch sein großes Wissen und seine freundliche Art ist er ein Gewinn für jedes Team.',
+        }, {
+          name: 'Anastasia Tsypkaykina',
           projectName: 'Project Join',
-          comment: '‘‘Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.’’',
+          comment: 'Younes war sehr hilfsbereit in unserem Projekt, und ich habe es wirklich genossen, mit ihm zusammenzuarbeiten. Er war immer pünktlich und hat seine Zeit und Arbeit extrem gut gemanagt. Außerdem kommunizierte er klar und war während des gesamten Projekts ein zuverlässiges Teammitglied.',
         }, {
-          name: 'Evelyn Marx',
-          projectName: 'Project DA Bubble',
-          comment: '‘’ He is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code. ‘’',
-        }, {
-          name: 'Noah Mueller',
-          projectName: 'Project Sharkie',
-          comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
-        }, {
-          name: 'Noah Mueller',
-          projectName: 'Project Sharkie',
-          comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
-        }, {
-          name: 'Noah Mueller',
-          projectName: 'Project Sharkie',
-          comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
-        }, {
-          name: 'Noah Mueller',
-          projectName: 'Project Sharkie',
-          comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
+          name: 'Kevin Hase',
+          projectName: 'Project Join',
+          comment: 'Younes, deine ruhige Art, dein Einsatz und dein verlässlicher Support haben unsere Zusammenarbeit wirklich besonders gemacht.',
         }
+        // , {
+        //   name: 'Noah Mueller',
+        //   projectName: 'Project Sharkie',
+        //   comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
+        // }, {
+        //   name: 'Noah Mueller',
+        //   projectName: 'Project Sharkie',
+        //   comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
+        // }, {
+        //   name: 'Noah Mueller',
+        //   projectName: 'Project Sharkie',
+        //   comment: '‘Michael had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person.’’',
+        // }
       ]
     },
     contact: {
@@ -393,7 +395,7 @@ export class Languages {
       address: "Test Str. 1",
       // address: "Langenhainer Str. 1",        
       city: "28195 Bremen",
-      contact : "Kontakt",
+      contact: "Kontakt",
       phone: "+49 176 87853794",
       email: "info@younes-darabi.de",
     },
