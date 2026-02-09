@@ -16,7 +16,8 @@
 
         .div_imprint {
             color: white;
-            width: 750px;
+            min-width: 500px;
+            padding-right: 50px;
         }
 
         .div_info {
@@ -60,7 +61,7 @@
             min-width: calc(100vw - 270px);
 
             .div_imprint {
-                min-width: 406px;
+                min-width: 500px;
             }
         }
     }
