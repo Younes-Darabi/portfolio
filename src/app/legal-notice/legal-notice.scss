@@ -67,7 +67,7 @@
     }
 }
 
-@media (max-width:900px) {
+@media (max-width:900px), (max-height: 820px) {
     :host {
         margin-top: 50px;
         min-height: calc(100vh - 275px);

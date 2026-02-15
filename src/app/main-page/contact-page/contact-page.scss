@@ -221,7 +221,7 @@
             }
 
             .arrow {
-                margin: 150px 0;
+                // margin: 150px 0;
                 transition: all 250ms ease-in-out;
                 width: 80px;
 
@@ -265,7 +265,7 @@
     }
 }
 
-@media (max-width:900px) {
+@media (max-width:900px), (max-height: 820px)  {
     :host {
         width: 90%;
         margin-top: 0;

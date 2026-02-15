@@ -237,7 +237,7 @@
     }
 }
 
-@media (max-width:900px) {
+@media (max-width:900px), (max-height: 820px)  {
     :host {
         display: flex;
         width: 90%;
@@ -270,7 +270,7 @@
 
                     img {
                         display: flex;
-                        width: 80%;
+                        max-width: 80%;
                     }
                 }
 
@@ -292,13 +292,6 @@
                 .div_project_about {
                     flex-direction: column;
 
-                    .div_img_btn {
-
-                        img {
-                            display: flex;
-                        }
-                    }
-
                     .div_info {
                         margin: 0;
 
@@ -316,6 +309,10 @@
                     .div_img_btn {
                         margin-top: 30px;
                         margin-bottom: 20px;
+
+                        img {
+                            display: flex;
+                        }
 
                         .div_btn {
                             display: flex;
