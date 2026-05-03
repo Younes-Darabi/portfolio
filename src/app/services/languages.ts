@@ -113,6 +113,34 @@ export class Languages {
         imageUrl: "/assets/img/projects/pokemon.jpg",
         githubUrl: "https://github.com/Younes-Darabi/Pokemon",
         liveUrl: "https://pokedex.younes-darabi.de/index.html"
+      },
+      {
+        projectName: "Project KanMind",
+        aboutTitle: "About the project",
+        aboutProject:
+          "KanMind is a collaborative task and project management backend built with Django and Django REST Framework. It provides RESTful APIs for managing boards, tasks, and users.",
+        technologiesTitle: "Technologies I have used",
+        technologies: "Python, Django, SQLite",
+        mehrTitle: "What I have learned",
+        mehrText:
+          "I gained experience building RESTful APIs, designing database schemas, handling authentication and permissions, and deploying Django applications with Gunicorn and Nginx.",
+        imageUrl: "/assets/img/projects/kanmind.jpg",
+        githubUrl: "https://github.com/Younes-Darabi/kanmind",
+        liveUrl: "https://kanmind.younes-darabi.de"
+      },
+      {
+        projectName: "Project Coderr",
+        aboutTitle: "About the project",
+        aboutProject:
+          "Coderr is a backend system for managing code snippets, built with Django. It allows CRUD operations on snippets, user authentication, and categorization via REST APIs.",
+        technologiesTitle: "Technologies I have used",
+        technologies: "Python, Django, SQLite",
+        mehrTitle: "What I have learned",
+        mehrText:
+          "I learned how to build secure REST APIs, manage database relationships, implement authentication and authorization, and deploy Django apps in production environments.",
+        imageUrl: "/assets/img/projects/coderr.jpg",
+        githubUrl: "https://github.com/Younes-Darabi/Coderr",
+        liveUrl: "https://coderr.younes-darabi.de"
       }],
       more: "Show me more",
       less: "Show me less",
@@ -173,7 +201,7 @@ export class Languages {
       invitationText: "Feel free to get in touch if you would like to collaborate or learn more about my work. I am confident that my expertise and enthusiasm for continuous learning can make a valuable contribution to your team.",
       contactInfo: {
         email: "E-mail: info@younes-darabi.de",
-        tel: "Tel: 017687853794"
+        tel: "Tel: -"
       },
       links: {
         legalNotice: "Legal notice",
@@ -185,10 +213,10 @@ export class Languages {
       mainTitle: "Legal Notice",
       title: "Imprint",
       name: "Younes Darabi",
-      address: "Langenhainer Str. 1",
+      address: "-",
       city: "28307 Bremen",
       contact: "contact",
-      phone: "+49 176 87853794",
+      phone: "-",
       email: "info@younes-darabi.de",
       title1: "1. Acceptance of Terms",
       text1: "By using this website, you confirm that you have read and accepted the following terms and conditions. Please read these terms carefully before using the website. If you disagree with any of the terms, please refrain from using the website.",
@@ -333,6 +361,34 @@ export class Languages {
         imageUrl: "/assets/img/projects/pokemon.jpg",
         githubUrl: "https://github.com/Younes-Darabi/Pokemon",
         liveUrl: "https://pokedex.younes-darabi.de/index.html"
+      },
+      {
+        projectName: "Projekt KanMind",
+        aboutTitle: "Über das Projekt",
+        aboutProject:
+          "KanMind ist ein Backend für kollaboratives Aufgaben- und Projektmanagement, entwickelt mit Django und Django REST Framework. Es bietet RESTful APIs zum Verwalten von Boards, Aufgaben und Benutzern.",
+        technologiesTitle: "Verwendete Technologien",
+        technologies: "Python, Django, SQLite",
+        mehrTitle: "Was ich gelernt habe",
+        mehrText:
+          "Ich habe Erfahrung im Aufbau von RESTful APIs, im Entwerfen von Datenbankschemata, im Umgang mit Authentifizierung und Berechtigungen sowie im Deployment von Django-Anwendungen mit Gunicorn und Nginx gesammelt.",
+        imageUrl: "/assets/img/projects/kanmind.jpg",
+        githubUrl: "https://github.com/Younes-Darabi/kanmind",
+        liveUrl: "https://kanmind.younes-darabi.de"
+      },
+      {
+        projectName: "Projekt Coderr",
+        aboutTitle: "Über das Projekt",
+        aboutProject:
+          "Coderr ist ein Backend-System zur Verwaltung von Code-Snippets, entwickelt mit Django. Es ermöglicht CRUD-Operationen für Snippets, Benutzer-Authentifizierung und Kategorisierung über REST APIs.",
+        technologiesTitle: "Verwendete Technologien",
+        technologies: "Python, Django, SQLite",
+        mehrTitle: "Was ich gelernt habe",
+        mehrText:
+          "Ich habe gelernt, sichere REST APIs zu erstellen, Datenbankbeziehungen zu verwalten, Authentifizierung und Autorisierung zu implementieren und Django-Anwendungen produktionsreif bereitzustellen.",
+        imageUrl: "/assets/img/projects/coderr.jpg",
+        githubUrl: "https://github.com/Younes-Darabi/Coderr",
+        liveUrl: "https://coderr.younes-darabi.de"
       }],
       more: "Mehr anzeigen",
       less: "Weniger anzeigen",
@@ -393,7 +449,7 @@ export class Languages {
       invitationText: "Kontaktieren Sie mich gerne, wenn Sie an einer Zusammenarbeit interessiert sind oder mehr über meine Arbeit erfahren möchten. Ich bin überzeugt, dass ich mit meinem Fachwissen und meiner Begeisterung für kontinuierliche Weiterentwicklung einen wertvollen Beitrag zu Ihrem Team leisten kann.",
       contactInfo: {
         email: "E-Mail: info@younes-darabi.de",
-        tel: "Tel: 017687853794"
+        tel: "Tel: -"
       },
       links: {
         legalNotice: "Impressum",
@@ -405,10 +461,10 @@ export class Languages {
       mainTitle: "Legal Notice",
       title: "Impressum",
       name: "Younes Darabi",
-      address: "Langenhainer Str. 1",
+      address: "-",
       city: "28307 Bremen",
       contact: "Kontakt",
-      phone: "+49 176 87853794",
+      phone: "-",
       email: "info@younes-darabi.de",
       title1: "1. Akzeptanz der Nutzungsbedingungen",
       text1: "Durch die Nutzung dieser Website bestätigen Sie, dass Sie die folgenden Bedingungen gelesen und akzeptiert haben. Bitte lesen Sie diese Bedingungen sorgfältig durch, bevor Sie die Website nutzen. Wenn Sie mit einer der Bedingungen nicht einverstanden sind, unterlassen Sie bitte die Nutzung der Website.",
