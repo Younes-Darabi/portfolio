@@ -41,7 +41,7 @@
                         text-align: center;
 
                         img {
-                            height: 60px;
+                            height: 40px;
                             background-color: transparent;
 
                             &:hover {
@@ -84,9 +84,18 @@
     }
 }
 
+@media (max-width:1300px) {
+    :host {
+        section {
+            width: 1050px;
+        }
+    }
+}
+
 @media (max-width:1240px) {
     :host {
         section {
+            width: 1070px;
             .main {
                 .div_skills {
                     div {
@@ -103,6 +112,7 @@
 @media (max-width:1180px) {
     :host {
         section {
+            width: 870px;
 
             .main {
 
@@ -130,12 +140,13 @@
 @media (max-width:1014px) {
     :host {
         section {
-            width: 770px;
+            width: 870px;
         }
     }
 }
 
-@media (max-width:900px), (max-height: 820px)  {
+@media (max-width:900px),
+(max-height: 820px) {
     :host {
         display: flex;
         justify-content: center;
