@@ -7,7 +7,7 @@ export class Languages {
 
   english = {
     name: "Younes Darabi",
-    title: "Frontend Developer",
+    title: "Fullstack Developer",
     menu: {
       contact: "Contact",
       myWork: "My Work",
@@ -15,7 +15,7 @@ export class Languages {
       whyMe: "Why me"
     },
     whyMe: {
-      intro: "I am a passionate Frontend Developer who loves turning ideas into interactive, user-friendly web applications. Coding is not just my profession; it’s my way of creating meaningful digital experiences. I continuously learn new frameworks and technologies to improve my skills and stay up-to-date with modern web development trends. My inspiration comes from solving real-world problems and building applications that make life easier for users.",
+      intro: "I am a passionate Fullstack Developer who loves turning ideas into interactive, user-friendly web applications. I work across the full stack — from building dynamic frontends with Angular and TypeScript to developing robust backends with Python and Django. Coding is not just my profession; it's my way of creating meaningful digital experiences.",
       iAm: "I am",
       location: "located in Bremen",
       remote: "open to work remote",
@@ -24,7 +24,7 @@ export class Languages {
     },
     mySkills: {
       title: "My Skill Set",
-      description: "I have hands-on experience working on various projects using modern front-end technologies such as Angular, TypeScript, and JavaScript. I am skilled in building responsive and user-friendly web applications with HTML, CSS, and REST APIs. I enjoy exploring new frameworks, improving my coding practices, and staying up-to-date with the latest technologies to deliver innovative digital solutions.",
+      description: "I have hands-on experience building full-stack web applications — from dynamic, responsive frontends with Angular, TypeScript, and JavaScript, to robust backends with Python and Django. I enjoy working across the entire stack, exploring new technologies, and delivering clean, scalable solutions.",
       technologies: [
         {
           name: 'Angular',
@@ -65,8 +65,40 @@ export class Languages {
           image: '/assets/img/icons/my-skills/frontend/material-design.svg'
         },
         {
-          name: 'Challange me',
-          image: '/assets/img/icons/my-skills/frontend/challange-me.svg'
+          name: 'RxJs',
+          image: '/assets/img/icons/my-skills/frontend/RxJs.svg'
+        },
+        {
+          name: 'Python',
+          image: '/assets/img/icons/my-skills/backend/Python.svg'
+        },
+        {
+          name: 'Django',
+          image: '/assets/img/icons/my-skills/backend/Django.svg'
+        },
+        {
+          name: 'Linux',
+          image: '/assets/img/icons/my-skills/backend/Linux.svg'
+        },
+        {
+          name: 'Redis',
+          image: '/assets/img/icons/my-skills/backend/Redis.svg'
+        },
+        {
+          name: 'PostgreSQL',
+          image: '/assets/img/icons/my-skills/backend/PostgreSQL.svg'
+        },
+        {
+          name: 'Docker',
+          image: '/assets/img/icons/my-skills/backend/Docker.svg'
+        },
+        {
+          name: 'Cloud',
+          image: '/assets/img/icons/my-skills/backend/Cloud.svg'
+        },
+        {
+          name: 'Challenge me',
+          image: '/assets/img/icons/my-skills/frontend/challenge-me.svg'
         },
       ],
       challengeMe: "I am always motivated to improve my skills, embrace new challenges, and develop creative and efficient solutions."
@@ -201,13 +233,13 @@ export class Languages {
       invitationText: "Feel free to get in touch if you would like to collaborate or learn more about my work. I am confident that my expertise and enthusiasm for continuous learning can make a valuable contribution to your team.",
       contactInfo: {
         email: "E-mail: info@younes-darabi.de",
-        tel: "Tel: -"
+        tel: "Tel: 0176 87853794"
       },
       links: {
         legalNotice: "Legal notice",
         privacyPolicy: "Privacy policy"
       },
-      footer: "© Younes Darabi 2025",
+      footer: "© Younes Darabi 2026",
     },
     legalNotice: {
       mainTitle: "Legal Notice",
@@ -216,7 +248,7 @@ export class Languages {
       address: "-",
       city: "28307 Bremen",
       contact: "contact",
-      phone: "-",
+      phone: "0176 87853794",
       email: "info@younes-darabi.de",
       title1: "1. Acceptance of Terms",
       text1: "By using this website, you confirm that you have read and accepted the following terms and conditions. Please read these terms carefully before using the website. If you disagree with any of the terms, please refrain from using the website.",
@@ -230,7 +262,7 @@ export class Languages {
       text5: "You agree to indemnify and hold me harmless from any legal or financial liability arising from your use of this website.",
       title6: "6. Changes to the Terms",
       text6: "I reserve the right to update these terms and conditions from time to time. If significant changes are made, I will post them on this page. It is recommended to review the terms regularly.",
-      itle7: "7. Contact",
+      title7: "7. Contact",
       text7: "If you have any questions or wish to contact me, please feel free to email me at info@younes-darabi.de"
     },
     privacyPolicy: {
@@ -247,13 +279,13 @@ export class Languages {
       rightsText: "You have the right to request information about your stored personal data at any time, as well as the right to correct, block, or delete this data.For this purpose, and for further questions about data protection, you can contact me at any time using the address provided in the legal notice.",
       contactTitle: "Contact",
       contactText: "For questions regarding data protection, please contact: Younes Darabi, Email: info@younes-darabi.de",
-      date: "Last updated: October 2025"
+      date: "Last updated: May 2026"
     }
   }
 
   deutsch = {
     name: "Younes Darabi",
-    title: "Frontend-Entwickler",
+    title: "Fullstack-Entwickler",
     menu: {
       contact: "Kontakt",
       myWork: "Projekte",
@@ -261,7 +293,7 @@ export class Languages {
       whyMe: "Über mich"
     },
     whyMe: {
-      intro: "Ich bin ein leidenschaftlicher Frontend-Entwickler, der es liebt, Ideen in interaktive, benutzerfreundliche Webanwendungen umzusetzen. Programmieren ist für mich nicht nur ein Beruf, sondern mein Weg, bedeutungsvolle digitale Erlebnisse zu schaffen. Ich lerne kontinuierlich neue Frameworks und Technologien, um meine Fähigkeiten zu verbessern und mit den neuesten Trends in der Webentwicklung Schritt zu halten. Meine Inspiration ziehe ich daraus, reale Probleme zu lösen und Anwendungen zu entwickeln, die das Leben der Nutzer erleichtern.",
+      intro: "Ich bin ein leidenschaftlicher Fullstack-Entwickler, der es liebt, Ideen in interaktive, benutzerfreundliche Webanwendungen umzusetzen. Ich arbeite sowohl im Frontend mit Angular und TypeScript als auch im Backend mit Python und Django. Programmieren ist für mich nicht nur ein Beruf, sondern mein Weg, bedeutungsvolle digitale Erlebnisse zu schaffen.",
       iAm: "Ich bin",
       location: "ansässig in Bremen",
       remote: "offen für Remote-Arbeit",
@@ -270,7 +302,7 @@ export class Languages {
     },
     mySkills: {
       title: "Meine Fähigkeiten",
-      description: "Ich habe praktische Erfahrung in der Arbeit an verschiedenen Projekten mit modernen Frontend-Technologien wie Angular, TypeScript und JavaScript. Ich entwickle responsive und benutzerfreundliche Webanwendungen mit HTML, CSS und REST-APIs. Es bereitet mir Freude, neue Frameworks zu erkunden, meine Programmierpraktiken zu verbessern und stets mit den neuesten Technologien Schritt zu halten, um innovative digitale Lösungen zu schaffen.",
+      description: "Ich habe praktische Erfahrung in der Entwicklung von Full-Stack-Webanwendungen — vom dynamischen, responsiven Frontend mit Angular, TypeScript und JavaScript bis hin zum robusten Backend mit Python und Django. Ich arbeite gerne über den gesamten Stack hinweg, erkunde neue Technologien und liefere saubere, skalierbare Lösungen.",
       technologies: [
         {
           name: 'Angular',
@@ -313,8 +345,40 @@ export class Languages {
           image: '/assets/img/icons/my-skills/frontend/material-design.svg'
         },
         {
+          name: 'RxJs',
+          image: '/assets/img/icons/my-skills/frontend/RxJs.svg'
+        },
+        {
+          name: 'Python',
+          image: '/assets/img/icons/my-skills/backend/Python.svg'
+        },
+        {
+          name: 'Django',
+          image: '/assets/img/icons/my-skills/backend/Django.svg'
+        },
+        {
+          name: 'Linux',
+          image: '/assets/img/icons/my-skills/backend/Linux.svg'
+        },
+        {
+          name: 'Redis',
+          image: '/assets/img/icons/my-skills/backend/Redis.svg'
+        },
+        {
+          name: 'PostgreSQL',
+          image: '/assets/img/icons/my-skills/backend/PostgreSQL.svg'
+        },
+        {
+          name: 'Docker',
+          image: '/assets/img/icons/my-skills/backend/Docker.svg'
+        },
+        {
+          name: 'Cloud',
+          image: '/assets/img/icons/my-skills/backend/Cloud.svg'
+        },
+        {
           name: 'Fordere mich heraus',
-          image: '/assets/img/icons/my-skills/frontend/challange-me.svg'
+          image: '/assets/img/icons/my-skills/frontend/challenge-me.svg'
         },
       ],
       challengeMe: "Ich bin stets motiviert, meine Fähigkeiten zu verbessern, neue Herausforderungen anzunehmen und kreative sowie effiziente Lösungen zu entwickeln."
@@ -449,13 +513,13 @@ export class Languages {
       invitationText: "Kontaktieren Sie mich gerne, wenn Sie an einer Zusammenarbeit interessiert sind oder mehr über meine Arbeit erfahren möchten. Ich bin überzeugt, dass ich mit meinem Fachwissen und meiner Begeisterung für kontinuierliche Weiterentwicklung einen wertvollen Beitrag zu Ihrem Team leisten kann.",
       contactInfo: {
         email: "E-Mail: info@younes-darabi.de",
-        tel: "Tel: -"
+        tel: "Tel: 0176 87853794"
       },
       links: {
         legalNotice: "Impressum",
         privacyPolicy: "Datenschutzerklärung"
       },
-      footer: "© Younes Darabi 2025",
+      footer: "© Younes Darabi 2026",
     },
     legalNotice: {
       mainTitle: "Legal Notice",
@@ -464,7 +528,7 @@ export class Languages {
       address: "-",
       city: "28307 Bremen",
       contact: "Kontakt",
-      phone: "-",
+      phone: "0176 87853794",
       email: "info@younes-darabi.de",
       title1: "1. Akzeptanz der Nutzungsbedingungen",
       text1: "Durch die Nutzung dieser Website bestätigen Sie, dass Sie die folgenden Bedingungen gelesen und akzeptiert haben. Bitte lesen Sie diese Bedingungen sorgfältig durch, bevor Sie die Website nutzen. Wenn Sie mit einer der Bedingungen nicht einverstanden sind, unterlassen Sie bitte die Nutzung der Website.",
@@ -495,7 +559,7 @@ export class Languages {
       rightsText: "Sie haben jederzeit das Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten sowie das Recht auf Berichtigung, Sperrung oder Löschung. Für Fragen zum Datenschutz können Sie sich jederzeit über die im Impressum angegebene Adresse an mich wenden.",
       contactTitle: "Kontakt",
       contactText: "Für Fragen zum Datenschutz kontaktieren Sie bitte: Younes Darabi, E-Mail: info@younes-darabi.de",
-      date: "Letzte Aktualisierung: Oktober 2025"
+      date: "Letzte Aktualisierung: Mai 2026"
     }
   };
 
