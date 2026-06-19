@@ -173,7 +173,22 @@ export class Languages {
         imageUrl: "/assets/img/projects/coderr.jpg",
         githubUrl: "https://github.com/Younes-Darabi/Coderr",
         liveUrl: "https://coderr.younes-darabi.de"
-      }],
+      },
+      {
+        projectName: "Project Videoflix",
+        aboutTitle: "About the Project",
+        aboutProject:
+          "Videoflix is a Netflix-style streaming platform built with Django REST Framework. Videos are automatically converted and streamed in multiple resolutions via HLS.",
+        technologiesTitle: "Technologies Used",
+        technologies: "Python, Django, PostgreSQL, Redis, FFMPEG, Docker, Nginx",
+        mehrTitle: "What I Learned",
+        mehrText:
+          "I implemented HLS streaming, async background tasks with RQ, and JWT authentication, then deployed the app to production using Docker and Nginx.",
+        imageUrl: "/assets/img/projects/videoflix.jpg",
+        githubUrl: "https://github.com/Younes-Darabi/videoflix",
+        liveUrl: "https://videoflix.younes-darabi.de"
+      }
+      ],
       more: "Show me more",
       less: "Show me less",
       ongoingProject: {
@@ -245,7 +260,7 @@ export class Languages {
       mainTitle: "Legal Notice",
       title: "Imprint",
       name: "Younes Darabi",
-      address: "-",
+      address: "Langenhainer Str.1",
       city: "28307 Bremen",
       contact: "contact",
       phone: "0176 87853794",
@@ -453,6 +468,20 @@ export class Languages {
         imageUrl: "/assets/img/projects/coderr.jpg",
         githubUrl: "https://github.com/Younes-Darabi/Coderr",
         liveUrl: "https://coderr.younes-darabi.de"
+      },
+      {
+        projectName: "Projekt Videoflix",
+        aboutTitle: "Über das Projekt",
+        aboutProject:
+          "Videoflix ist eine Netflix-ähnliche Videoplattform mit Django REST Framework. Videos werden automatisch in mehreren Qualitätsstufen per HLS gestreamt.",
+        technologiesTitle: "Verwendete Technologien",
+        technologies: "Python, Django, PostgreSQL, Redis, FFMPEG, Docker, Nginx",
+        mehrTitle: "Was ich gelernt habe",
+        mehrText:
+          "Ich habe HLS-Streaming, asynchrone Tasks mit RQ und JWT-Authentifizierung implementiert sowie die App mit Docker und Nginx deployed.",
+        imageUrl: "/assets/img/projects/videoflix.jpg",
+        githubUrl: "https://github.com/Younes-Darabi/videoflix",
+        liveUrl: "https://videoflix.younes-darabi.de"
       }],
       more: "Mehr anzeigen",
       less: "Weniger anzeigen",
@@ -525,7 +554,7 @@ export class Languages {
       mainTitle: "Legal Notice",
       title: "Impressum",
       name: "Younes Darabi",
-      address: "-",
+      address: "Langenhainer Str.1",
       city: "28307 Bremen",
       contact: "Kontakt",
       phone: "0176 87853794",
